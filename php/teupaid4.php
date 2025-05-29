@@ -6,13 +6,13 @@
   <h2>Nossas Trilhas Populares</h2>
   <div class="trails-grid">
     <div class="trail-card">
-      <img src="https://via.placeholder.com/350x200/8FBC8F/FFFFFF?Text=Trilha+1" alt="Trilha 1">
+      <img src="../img/ponteitapiraco.jpg" alt="Trilha 1">
       <h3>Trilhas da reserva do Itapiracó</h3>
       <p>Nível: Fácil | Distância: 6.3km | Duração: 1.28 horas</p>
       <a href="http://localhost/gama/php/itapiraco.php" class="button secondary">Detalhes</a>
     </div>
     <div class="trail-card">
-      <img src="https://via.placeholder.com/350x200/A0522D/FFFFFF?Text=Trilha+2" alt="Trilha 2">
+      <img src="../img/praçadobommenino.jpg" alt="Trilha 2">
       <h3>Tilhas do Parque do Bom menino</h3>
       <p>Nível: Fácil | Distância:  2,96km | Duração: 45 Minutos</p>
       <a href="http://localhost/gama/php/parquebommenino.php" class="button secondary">Detalhes</a>
