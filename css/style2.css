@@ -7,10 +7,10 @@
 }
 
 .conteudo img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
-  flex: 1 1 300px;
+  flex: 1 1 280px;
 }
 
 .texto {
@@ -71,4 +71,27 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.trilhas {
+  margin-top: 60px; /* espaço entre as seções */
+  padding-top: 20px;
+  border-top: 2px solid #ccc; /* linha sutil de separação */
+}
+
+.trilhas h3 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trilhas p {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }

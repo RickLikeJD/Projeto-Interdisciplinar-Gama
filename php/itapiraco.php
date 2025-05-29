@@ -31,6 +31,24 @@
 
     </div>
   </div>
+   <div class="container trilhas">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <h3 class="text-center">Trilhas da Reserva do Itapiracó</h3>
+      
+      <p>
+        A Área de Proteção Ambiental (APA) do Itapiracó, localizada entre São Luís e São José de Ribamar, no Maranhão, é uma importante reserva ecológica que cobre aproximadamente 322 hectares. É um dos poucos remanescentes de floresta nativa dentro da área urbana da capital maranhense e oferece diversas trilhas ecológicas que variam em extensão e dificuldade, sendo ideais tanto para iniciantes quanto para caminhantes mais experientes.
+      </p>
+      <p>
+        Entre as trilhas mais conhecidas da APA, destaca-se a Trilha 1, com cerca de 6,3 km de extensão. Ela é considerada fácil e pode ser percorrida em aproximadamente 1h30, sendo ideal para iniciantes e famílias. Outra opção bastante procurada é a Trilha da APA Itapiracó, com 4,87 km, considerada de dificuldade moderada, por conta do desnível leve ao longo do caminho. Para quem busca uma trilha mais extensa e desafiadora, existe a Trilha da APA Itapiracó circular, com 8,37 km de percurso, também de dificuldade moderada, ideal para caminhadas mais longas e exploratórias.
+      </p>
+      <p>
+        Há também trilhas mais curtas, como a Trilha Reserva do Itapiracó - Cohatrac, com apenas 2,08 km, perfeita para caminhadas rápidas, e a trilha que percorre o Complexo Esportivo da Reserva do Itapiracó, com cerca de 5 km, que combina a experiência da natureza com áreas de lazer e prática esportiva.
+      </p>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="social-media">
     <a href="https://www.instagram.com/reservadoitapiraco?igsh=d3FwaHA0d3Vicmt5" 
@@ -43,6 +61,7 @@
     </a>
      <span class="instagram-text"> Instagram oficial da reserva do Itapiracó </span>
   </div>
+
 </footer>
 <div class="container">
   <div class="row">
