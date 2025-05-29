@@ -27,7 +27,11 @@
         Em 2017, o espaço ganhou praças, campos de futebol, trilhas, parquinhos e mais de 10 km de áreas para caminhada, tornando-se o maior centro de lazer do estado.
       </p>
 
-     <div class="social-media">
+     
+
+    </div>
+  </div>
+  <div class="social-media">
   <a href="https://www.instagram.com/reservadoitapiraco?igsh=d3FwaHA0d3Vicmt5" 
      target="_blank" 
      rel="noopener noreferrer" 
@@ -37,8 +41,5 @@
          class="instagram-icon">
   </a>
 </div>
-
-    </div>
-  </div>
 </body>
 </html>
