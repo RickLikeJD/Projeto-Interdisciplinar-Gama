@@ -31,15 +31,24 @@
 
     </div>
   </div>
+<footer>
   <div class="social-media">
-  <a href="https://www.instagram.com/reservadoitapiraco?igsh=d3FwaHA0d3Vicmt5" 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     class="instagram-button">
-    <img src="../img/instagram.webp" 
-         alt="Instagram" 
-         class="instagram-icon">
-  </a>
-</div>
+    <a href="https://www.instagram.com/reservadoitapiraco?igsh=d3FwaHA0d3Vicmt5" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="instagram-button">
+      <img src="../img/instagram.webp" 
+           alt="Instagram" 
+           class="instagram-icon">
+    </a>
+     <span class="instagram-text"> Instagram oficial da reserva do Itapiracó </span>
+  </div>
+</footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p>&copy; 2023 Reserva do Itapiracó. Todos os direitos reservados.</p>
+    </div>
+  </div>
 </body>
 </html>

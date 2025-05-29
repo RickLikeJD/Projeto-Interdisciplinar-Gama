@@ -45,3 +45,30 @@
     height: 100%;
     object-fit: contain;
 }
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram-button {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instagram-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
