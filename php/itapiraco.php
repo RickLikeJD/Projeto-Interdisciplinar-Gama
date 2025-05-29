@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container conteudo">
-    <img src="../img/itapiraco1.jpg" alt="Reserva do Itapiracó"> <!-- ajuste o caminho conforme sua estrutura -->
+    <img src="../img/itapiraco1.jpeg" alt="Reserva do Itapiracó"> <!-- ajuste o caminho conforme sua estrutura -->
 
     <div class="texto">
       <h2>Reserva do Itapiracó</h2>
@@ -26,7 +26,7 @@
       <p>
         Em 2017, o espaço ganhou praças, campos de futebol, trilhas, parquinhos e mais de 10 km de áreas para caminhada, tornando-se o maior centro de lazer do estado.
       </p>
-      
+
      <div class="social-media">
   <a href="https://www.instagram.com/reservadoitapiraco?igsh=d3FwaHA0d3Vicmt5" 
      target="_blank" 
