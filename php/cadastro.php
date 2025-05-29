@@ -13,16 +13,6 @@ include('../gama/conexao.php');
 </head>
 <body class="bg-dark text-white">
 
-<!-- Header -->
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="img/logo2.png" alt="Logo" width="40" class="me-2">
-            <span>Gama</span>
-        </a>
-    </div>
-</nav>
-
 <!-- Container -->
 <div class="container">
     <div class="row justify-content-center">
