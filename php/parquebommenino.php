@@ -1,5 +1,4 @@
 <?php include 'header.php'; // Seu cabeçalho HTML ?>
-<?php include 'header.php'; // Seu cabeçalho HTML ?>
 
 
 <head>
@@ -26,9 +25,6 @@
       </p>
     </div>
     <div class="container trilhas">
-        <h3>Trilhas</h3>
-        <ul>
-            <li>Trilha do Bom Menino</li>
-            <li>Trilha do Parque</li>
-            <li>Trilha da Natureza</li>
+        <h3>Trilhas do Bom Menino</h3>
+        <p>Uma das trilhas mais conhecidas do parque possui aproximadamente 2,96 km de extensão, com um desnível positivo e negativo de 21 metros, sendo considerada de dificuldade fácil. Este percurso circular pode ser completado em cerca de 28 minutos, tornando-se ideal para caminhadas leves e corridas. O ambiente arborizado e as pistas largas também são propícios para o ciclismo e outras atividades físicas.</p>
     </div>
