@@ -1,0 +1,314 @@
+/* Reset Básico e Estilos Globais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    color: #2E7D32; /* Verde escuro principal */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p.intro-text {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2E7D32; /* Verde escuro */
+    color: #fff;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+}
+header nav ul li a:hover {
+    color: #FFC107; /* Amarelo para hover */
+    text-decoration: none;
+}
+
+/* Seção Hero */
+.hero {
+    /* !!!!!!!!!!! COLOQUE O CAMINHO DA SUA IMAGEM AQUI !!!!!!!!!!! */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqJ4kK1-FWUiLpD8RBFexESQCl7np5GNIOCvuo8WyRGTC0QQi2Fp5TWaibQjcyWXoT_O0UFIH_wCakppuUisNdhYsQ4p0qdH34nwprr8C855naX9nVoL1xhq-vEvgi5RcTMBRwZ=s680-w680-h510-rw');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background-color: #FF8F00; /* Laranja */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E67E00; /* Laranja mais escuro */
+    text-decoration: none;
+}
+
+.cta-button-secondary {
+    background-color: transparent;
+    color: #2E7D32; /* Verde escuro */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid #2E7D32;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button-secondary:hover {
+    background-color: #2E7D32;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Seções de Conteúdo */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section.alt-bg {
+    background-color: #E8F5E9; /* Verde bem claro */
+}
+
+/* Grid de Features (Sobre) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.feature-item h3 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2; /* Proporção da imagem */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item p {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Cards de Atividades */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.activity-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-card h3 {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.activity-card p {
+    font-size: 1em;
+    padding: 0 15px 15px 15px;
+    color: #555;
+}
+
+/* Seção Visite */
+.visit-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.visit-info-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.visit-info-item h3 {
+    margin-top: 0;
+}
+
+.map-placeholder iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #1B5E20; /* Verde mais escuro para rodapé */
+    color: #E0E0E0; /* Cinza claro para texto */
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social-links a {
+    color: #A5D6A7; /* Verde claro para links sociais */
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+footer .social-links a:hover {
+    color: #FFC107; /* Amarelo para hover */
+}
+
+
+/* Media Queries para Responsividade Básica */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    header nav ul li {
+        margin: 8px 0;
+    }
+    .hero h2 {
+        font-size: 2.2em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+}
