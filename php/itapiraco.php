@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php include 'header.php'; // Seu cabeçalho HTML ?>
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reserva do Itapiracó</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style2.css"> <!-- CSS separado -->
+  <link rel="stylesheet" href="../css/style2.css"> <!-- CSS separado -->
 </head>
 <body>
   <div class="container conteudo">

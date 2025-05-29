@@ -93,7 +93,7 @@ include('../gama/conexao.php'); // Seu arquivo de conexão
                                                 // session_start(); // Já iniciado no topo do script
                                                 $_SESSION['usuario_id'] = $user_data['id']; // Armazene o ID do usuário, é mais útil
                                                 $_SESSION['usuario_nome'] = $user_data['usuario']; // Ou o nome de usuário, como preferir
-                                                header("Location: ../php/index.php"); // Redirecionar para a página inicial
+                                                header("Location: ../php/home.php"); // Redirecionar para a página inicial
                                                 exit();
                                             } else {
                                                 // Senha incorreta
