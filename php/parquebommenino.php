@@ -1,0 +1,1 @@
+<?php include 'header.php'; // Seu cabeçalho HTML ?>
