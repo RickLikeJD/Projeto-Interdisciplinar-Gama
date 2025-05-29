@@ -1,9 +1,9 @@
 <?php
-include('gama/conexao.php');
+include('../gama/conexao.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php include 'header.php'; // Seu cabeçalho HTML ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
