@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="../css/bomminino.css"> <!-- CSS separado -->
 </head>
 <body>
+     <div class="container titulo">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <h3 class="text-center">Parque do bom menino</h3>
   <div class="container conteudo">
-
+    
   <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
   <div class="texto-imagem">
     <img src="../img/ParquedoBomMenino.jpg" alt="Parque bom menino">
     <div class="texto">
-      <h2>Parque do Bom Menino</h2>
       <p>O Parque do Bom Menino, situado no centro de São Luís, Maranhão, é uma unidade de conservação urbana que oferece uma variedade de trilhas e espaços para atividades físicas e lazer. Com uma área de 9.557 m², o parque é um refúgio verde em meio à cidade, proporcionando aos visitantes a oportunidade de se conectar com a natureza e praticar exercícios ao ar livre
 
       </p>

@@ -1,3 +1,16 @@
+.titulo  {
+  margin-top: 60px; /* espaço entre as seções */
+  padding-top: 20px;
+  border-top: 2px solid #6ecf1e; /* linha sutil de separação */
+}
+.titulo h3 {
+    font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;  /* centraliza o título */
+}
+
 .conteudo {
     margin-top: 40px;
 }
