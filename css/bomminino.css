@@ -1,0 +1,44 @@
+.conteudo {
+    margin-top: 40px;
+}
+
+/* Estilo para o primeiro bloco (imagem à esquerda, texto à direita) */
+.texto-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.texto-imagem img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-imagem .texto {
+    width: 55%;
+    text-align: right; /* texto alinhado à direita */
+}
+
+/* Estilo para o segundo bloco (imagem à direita, texto à esquerda) */
+.texto-imagem-reverso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* inverte a ordem: imagem à direita */
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.texto-imagem-reverso img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-imagem-reverso .texto {
+    width: 55%;
+    text-align: left; /* texto alinhado à esquerda */
+}
