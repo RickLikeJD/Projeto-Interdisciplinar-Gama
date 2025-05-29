@@ -13,7 +13,7 @@
       <img src="https://via.placeholder.com/350x200/8FBC8F/FFFFFF?Text=Trilha+1" alt="Trilha 1">
       <h3>Trilha do Parque Itapiracó</h3>
       <p>Nível: Fácil | Distância: 6.3km | Duração: 1.28 horas</p>
-      <a href="#" class="button secondary">Detalhes</a>
+      <a href="itapiraco.php" class="button secondary">Detalhes</a>
     </div>
     <div class="trail-card">
       <img src="https://via.placeholder.com/350x200/A0522D/FFFFFF?Text=Trilha+2" alt="Trilha 2">
@@ -25,7 +25,7 @@
       <img src="https://via.placeholder.com/350x200/228B22/FFFFFF?Text=Trilha+3" alt="Trilha 3">
       <h3>Travessia da Mata Atlântica</h3>
       <p>Nível: Difícil | Distância: 12km | Duração: 6 horas</p>
-      <a href="#" class="button secondary">Detalhes</a>
+      <a href="" class="button secondary">Detalhes</a>
     </div>
   </div>
   <div class="view-all">
