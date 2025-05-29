@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php include 'header.php'; // Seu cabeçalho HTML ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parque Estadual do Sítio do Rangedor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/rangedor.css">
 </head>
 <body>
-    <section id="sobre" class="content-section">
-        <div class="container">
-            <h2> Parque do Rangedor</h2>
-            <p class="intro-text">Criado originalmente como Estação Ecológica em 2005 (Decreto nº 21.797) e posteriormente alterado, o Parque do Rangedor é uma unidade de proteção integral. Sua principal função ecológica é a reposição de aquíferos, fundamental para o abastecimento de lençóis freáticos da cidade. Além disso, atua como um regulador térmico em meio à crescente urbanização e abriga uma diversidade de espécies vegetais nativas, como jatobá, pau-pombo, angelim, babaçu e tucum. Projetos de infraestrutura no parque foram planejados para ocupar áreas já degradadas, com iniciativas de reflorestamento com árvores nativas, visando a conservação ambiental..</p>            
-            
+<section id="nova-secao" class="content-section">
+    <div class="container">
+        <h2>Parque do Rangedor</h2>
+        <div class="flex-container">
+            <div class="texto-container">
+            <p class="intro-text">Criado originalmente como Estação Ecológica em 2005 (Decreto nº 21.797) e posteriormente alterado, o Parque do Rangedor é uma unidade de proteção integral. Sua principal função ecológica é a reposição de aquíferos, fundamental para o abastecimento de lençóis freáticos da cidade. Além disso, atua como um regulador térmico em meio à crescente urbanização e abriga uma diversidade de espécies vegetais nativas, como jatobá, pau-pombo, angelim, babaçu e tucum. Projetos de infraestrutura no parque foram planejados para ocupar áreas já degradadas, com iniciativas de reflorestamento com árvores nativas, visando a conservação ambiental..</p>  
+            </div>
+            <div class="imagem-container">
+                <img src="../img/ponteitapiraco.jpg" alt="Descrição da Imagem">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="visite" class="content-section">
         <div class="container">

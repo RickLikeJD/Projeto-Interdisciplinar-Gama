@@ -14,6 +14,32 @@ body {
     padding: 0 15px;
 }
 
+.flex-container {
+    display: flex; /* ATIVA O FLEXBOX! */
+    align-items: flex-start; /* Alinha os itens verticalmente ao centro (opcional) */
+    gap: 20px; /* Espaço entre o texto e a imagem (opcional) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas menores */
+}
+
+.texto-container {
+    flex: 1; /* Faz com que o container de texto ocupe o espaço disponível */
+    /* Ou você pode definir uma largura específica, ex: flex-basis: 60%; */
+    min-width: 300px; /* Largura mínima para evitar que fique muito espremido */
+}
+
+.imagem-container {
+    flex: 1; /* Faz com que o container da imagem ocupe o espaço disponível */
+    /* Ou você pode definir uma largura específica, ex: flex-basis: 40%; */
+    min-width: 200px; /* Largura mínima para a imagem */
+}
+
+.imagem-container img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do seu container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    border-radius: 8px; /* Apenas um estilo extra (opcional) */
+}
+
 h1, h2, h3 {
     color: #2E7D32; /* Verde escuro principal */
 }
