@@ -13,7 +13,7 @@
     </div>
     <div class="trail-card">
       <img src="https://via.placeholder.com/350x200/A0522D/FFFFFF?Text=Trilha+2" alt="Trilha 2">
-      <h3>tilhas do Parque do Bom menino</h3>
+      <h3>Tilhas do Parque do Bom menino</h3>
       <p>Nível: Fácil | Distância:  2,96km | Duração: 45 Minutos</p>
       <a href="http://localhost/gama/php/parquebommenino.php" class="button secondary">Detalhes</a>
     </div>
