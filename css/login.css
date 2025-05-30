@@ -3,8 +3,17 @@
 /* General Resets and Base Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f7f6;
-    color: #555;
+    color: #555; /* Ensure this contrasts with your image or card background */
+    
+    /* --- Background Image Settings --- */
+    background-image: url('../img/testebkg.jpg'); /* <<< CHANGE THIS PATH to your image */
+    background-size: cover;         /* Scales to cover the entire viewport, maintains aspect ratio, crops if necessary */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat;     /* Prevents tiling */
+    background-attachment: fixed;     /* Image stays fixed when scrolling content (optional) */
+    background-color: #f4f7f6;      /* Fallback color if image fails to load or during load */
+    /* --- End Background Image Settings --- */
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;

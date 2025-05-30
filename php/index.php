@@ -1,31 +1,27 @@
 <?php include 'header.php'; ?>
-
-<head>
-    <link
-    rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/estilo.css">
 
 <section id="trilhas" class="trails-section">
   <h2>Nossas Trilhas Populares</h2>
   <div class="trails-grid">
     <div class="trail-card">
-      <img src="https://via.placeholder.com/350x200/8FBC8F/FFFFFF?Text=Trilha+1" alt="Trilha 1">
-      <h3>Trilha do Parque Itapiracó</h3>
+      <img src="../img/ponteitapiraco.jpg" alt="Trilha 1">
+      <h3>Trilhas da reserva do Itapiracó</h3>
       <p>Nível: Fácil | Distância: 6.3km | Duração: 1.28 horas</p>
-      <a href="itapiraco.php" class="button secondary">Detalhes</a>
+      <a href="http://localhost/gama/php/itapiraco.php" class="button secondary">Detalhes</a>
     </div>
     <div class="trail-card">
-      <img src="https://via.placeholder.com/350x200/A0522D/FFFFFF?Text=Trilha+2" alt="Trilha 2">
-      <h3>Pico do Mirante</h3>
-      <p>Nível: Médio | Distância: 7km | Duração: 3 horas</p>
-      <a href="#" class="button secondary">Detalhes</a>
+      <img src="../img/praçadobommenino.jpg" alt="Trilha 2">
+      <h3>Tilhas do Parque do Bom menino</h3>
+      <p>Nível: Fácil | Distância:  2,96km | Duração: 45 Minutos</p>
+      <a href="http://localhost/gama/php/parquebommenino.php" class="button secondary">Detalhes</a>
     </div>
     <div class="trail-card">
       <img src="https://via.placeholder.com/350x200/228B22/FFFFFF?Text=Trilha+3" alt="Trilha 3">
       <h3>Travessia da Mata Atlântica</h3>
       <p>Nível: Difícil | Distância: 12km | Duração: 6 horas</p>
-      <a href="" class="button secondary">Detalhes</a>
+      <a href="#" class="button secondary">Detalhes</a>
     </div>
   </div>
   <div class="view-all">
@@ -65,8 +61,6 @@
 
       echo "<p><strong>Obrigado, $nome! Sua mensagem foi recebida.</strong></p>";
     }
-
-    // Later i will made a table in database to register ts 🥀
   ?>
 </section>
 
