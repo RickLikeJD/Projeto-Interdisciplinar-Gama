@@ -13,7 +13,7 @@
           <div class="card-body ">
             <h5 class="card-title">Trilhas da reserva do Itapiracó</h5>
             <p class="card-text">Nível: Fácil | Distância: 6.3km | Duração: 1.28 horas</p>
-            <a href="http://localhost/gama/php/itapiraco.php" class="btn btn-primary mt-auto">Detalhes</a>
+            <a href="http://localhost/projeto-interdisciplinar/php/itapiraco.php" class="btn btn-primary mt-auto">Detalhes</a>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
           <div class="card-body">
             <h5 class="card-title">Trilhas do Parque do Bom Menino</h5>
             <p class="card-text">Nível: Fácil | Distância: 2,96km | Duração: 45 Minutos</p>
-            <a href="http://localhost/gama/php/parquebommenino.php" class="btn btn-primary mt-auto">Detalhes</a>
+            <a href="http://localhost/projeto-interdisciplinar/php/parquebommenino.php" class="btn btn-primary mt-auto">Detalhes</a>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
           <div class="card-body ">
             <h5 class="card-title">Travessia da Mata Atlântica</h5>
             <p class="card-text">Nível: Fácil | Distância: 3.8km | Duração: 55 Minutos</p>
-            <a href="http://localhost/gama/php/rangedor.php" class="btn btn-primary mt-auto">Detalhes</a>
+            <a href="http://localhost/projeto-interdisciplinar/php/rangedor.php" class="btn btn-primary mt-auto">Detalhes</a>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@
   <div class="container">
     <h2 class="text-center mb-4">Entre em Contato</h2>
     <p class="text-center">Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
-    <form action="index.php#contato" method="POST" class="mx-auto" style="max-width: 600px;">
+    <form action="http://localhost/projeto-interdisciplinar/php/gamainicial.php#contato" method="POST" class="mx-auto" style="max-width: 600px;">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
         <input type="text" id="nome" name="nome" class="form-control" required>
