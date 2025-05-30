@@ -2,7 +2,7 @@ body {
             font-family: 'Inter', sans-serif; /* Fonte Inter como solicitado */
         }
         .background-image {
-            background-image: url('../img/testebkg.jpg'); /* Exemplo de imagem de montanha/trilha */
+            background-image: url('..img/background-login.jpg'); /* Exemplo de imagem de montanha/trilha */
             background-size: cover;
             background-position: center;
             filter: blur(8px); /* Efeito de desfoque */
