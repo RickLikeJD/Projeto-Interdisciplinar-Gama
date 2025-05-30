@@ -87,13 +87,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Determine body class for dark mode
-// This assumes $CORPO_ESCURO might be set in your 'header.php' or a global config included before it.
-// If 'header.php' itself outputs the <body> tag, this logic might need to be inside 'header.php'.
-$body_classes = '';
-if (isset($CORPO_ESCURO) && $CORPO_ESCURO === true) {
-    $body_classes .= ' dark-mode';
-}
 ?>
 
 <?php include 'header.php'; // Seu cabeçalho HTML ?>
@@ -110,7 +103,7 @@ if (isset($CORPO_ESCURO) && $CORPO_ESCURO === true) {
     
     <link rel="stylesheet" href="../css/login.css">
 </head>
-<body class="<?php echo trim($body_classes); ?>">
+<body>
 
 <div class="container login-container"> 
     <div class="row justify-content-center">

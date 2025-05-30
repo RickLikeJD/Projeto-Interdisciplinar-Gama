@@ -1,4 +1,9 @@
-<?php include 'header.php'; // Seu cabeçalho HTML ?>
+<?php
+include 'header.php';
+// 2. Define o nome da trilha para esta página específica
+// Este valor deve corresponder ao que está na sua coluna 'nome_trilha' no banco de dados
+$nome_trilha_atual = "parque do itapiracó"; // Exemplo
+?>
 
 
 <head>
@@ -48,6 +53,17 @@
     </div>
   </div>
 </div>
+
+    <main>
+
+        <section class="avaliacoes-da-trilha">
+            <?php
+            // 3. Inclui o template de avaliações
+            // O template usará as variáveis $conn e $nome_trilha_atual
+            include 'template-avaliacoes.php';
+            ?>
+        </section>
+    </main>
 
 <footer>
   <div class="social-media">

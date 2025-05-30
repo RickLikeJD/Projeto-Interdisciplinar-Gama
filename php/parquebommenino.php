@@ -1,4 +1,8 @@
-<?php include 'header.php'; // Seu cabeçalho HTML ?>
+<?php include 'header.php'; // Seu cabeçalho HTML 
+
+$nome_trilha_atual = "parque do bom menino"; // Exemplo
+
+?>
 
 
 <head>
@@ -39,5 +43,17 @@
       <p>Uma das trilhas mais conhecidas do parque possui aproximadamente 2,96 km de extensão, com um desnível positivo e negativo de 21 metros, sendo considerada de dificuldade fácil. Este percurso circular pode ser completado em cerca de 28 minutos, tornando-se ideal para caminhadas leves e corridas. O ambiente arborizado e as pistas largas também são propícios para o ciclismo e outras atividades físicas.</p>
     </div>
   </div>
+
+  <main>
+
+<section class="avaliacoes-da-trilha">
+    <?php
+    // 3. Inclui o template de avaliações
+    // O template usará as variáveis $conn e $nome_trilha_atual
+    include 'template-avaliacoes.php';
+    ?>
+</section>
+</main>
+
 
 </div>

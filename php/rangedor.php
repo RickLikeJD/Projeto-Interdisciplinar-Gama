@@ -1,4 +1,10 @@
-<?php include 'header.php'; // Seu cabeçalho HTML ?>
+<?php
+include 'header.php';
+// 2. Define o nome da trilha para esta página específica
+// Este valor deve corresponder ao que está na sua coluna 'nome_trilha' no banco de dados
+$nome_trilha_atual = "parque do rangedor"; // Exemplo
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +57,20 @@
             </div>
         </div>
     </section>
-     
+    
+
+    <main>
+
+        <section class="avaliacoes-da-trilha">
+            <?php
+            // 3. Inclui o template de avaliações
+            // O template usará as variáveis $conn e $nome_trilha_atual
+            include 'template-avaliacoes.php';
+            ?>
+        </section>
+    </main>
+
+
     <footer>
         <div class="container">
             <p>&copy; <span id="currentYear"></span> Parque Estadual do Sítio do Rangedor. Todos os direitos reservados.</p>
