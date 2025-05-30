@@ -30,13 +30,11 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg <?php echo ($currentPage == 'login.php' || $currentPage == 'cadastro.php') ? 'navbar-dark' : 'navbar-light bg-light'; ?>">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9c9c9c !important;">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="index.php">
+        <a class="navbar-brand d-flex align-items-center" href="gamainicial.php">
             <img src="../img/logo2.png" alt="Logo" width="50" height="50">
-            <?php if ($currentPage != 'login.php' && $currentPage != 'cadastro.php') : ?>
-                <span class="ms-2">Gama</span>
-            <?php endif; ?>
+            <span class="ms-2" style="color: black !important;">Gama</span>
         </a>
 
         <?php if ($currentPage != 'login.php' && $currentPage != 'cadastro.php') : ?>
@@ -48,18 +46,18 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link <?php echo ($currentPage == 'trilhas.php') ? 'active' : ''; ?>" href="trilhas.php">Trilhas</a>
+                        <a class="nav-link <?php echo ($currentPage == 'trilhas.php') ? 'active' : ''; ?>" href="trilhas.php" style="color:rgb(63, 156, 86) !important;">Trilhas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo ($currentPage == 'sobre.php') ? 'active' : ''; ?>" href="sobre.php">Sobre</a>
+                        <a class="nav-link <?php echo ($currentPage == 'sobre.php') ? 'active' : ''; ?>" href="sobre.php" style="color:rgb(63, 156, 86) !important;">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo ($currentPage == 'contato.php') ? 'active' : ''; ?>" href="contato.php">Contato</a>
+                        <a class="nav-link <?php echo ($currentPage == 'contato.php') ? 'active' : ''; ?>" href="contato.php" style="color:rgb(63, 156, 86) !important;">Contato</a>
                     </li>
 
                     <?php if (isset($_SESSION['usuario_id'])) : ?>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color:rgb(63, 156, 86) !important;">
                                 <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -71,7 +69,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         </li>
                     <?php else : ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.php">Login</a>
+                            <a class="nav-link" href="login.php" style="color:rgb(63, 156, 86) !important;">Login</a>
                         </li>
                     <?php endif; ?>
                 </ul>

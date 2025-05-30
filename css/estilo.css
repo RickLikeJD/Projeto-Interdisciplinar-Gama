@@ -101,7 +101,7 @@ nav ul li a:hover {
 /* === TRAILS SECTION === */
 .trails-section {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #F8F9FA;
   text-align: center;
 }
 
@@ -113,7 +113,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
+  background-color: #F8F9FA;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -165,7 +165,7 @@ nav ul li a:hover {
 /* === ABOUT SECTION === */
 .about-section {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #F8F9FA;
   text-align: center;
 }
 
@@ -181,7 +181,7 @@ nav ul li a:hover {
 /* === CONTACT SECTION === */
 .contact-section {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #F8F9FA;
   text-align: center;
 }
 
@@ -201,7 +201,7 @@ nav ul li a:hover {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #F8F9FA;
 }
 
 .form-group {
