@@ -316,14 +316,12 @@ if (isset($_GET['edit'])) {
             border: 1px solid # E0E0E0;
             border-radius: 10px;
             width: 90%; /* Could be more mobile-friendly */
-            max-width: 450px; /* Max width */
+            max-width: 350px; /* Max width */
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             text-align: center;
             position: relative; /* For potential close button positioning */
         }
         .modal-content img {
-            max-width: 80px; /* Adjust as needed */
-            margin-bottom: 20px;
         }
         .modal-content p {
             font-size: 1.1em;
@@ -458,7 +456,6 @@ if (isset($_GET['edit'])) {
 
 <div id="deleteConfirmModal" class="modal">
   <div class="modal-content">
-    <img src="../img/shaq stop.png" alt="Avaliação">
     <span style="font-size: 50px; display: block; margin-bottom:15px;"></span> <p>Tem certeza que deseja excluir esta avaliação?</p>
     <div class="modal-buttons">
       <button id="confirmDeleteBtn">Sim, Excluir</button>
