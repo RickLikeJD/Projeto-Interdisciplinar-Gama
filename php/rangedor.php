@@ -37,6 +37,21 @@
             </div>
         </div>
     </section>
+     <div class="container texto">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      
+      <p>
+        O Parque Estadual do Sítio do Rangedor, localizado entre os bairros Calhau e Cohafuma, em São Luís, Maranhão, oferece diversas trilhas para caminhadas e ciclismo. Uma das trilhas mais populares é a ciclovia de 3,5 km, que proporciona um percurso fácil e agradável para os visitantes. Além disso, há uma trilha circular de 3,38 km, com desnível positivo de apenas 3 metros, ideal para caminhadas leves e acessíveis a pessoas de todas as idades .
+      </p>
+      <p>
+       O parque conta com infraestrutura que inclui praças com equipamentos esportivos, playgrounds, um borboletário, áreas para piquenique e estacionamento. Mais de 90% de sua área de 120 hectares é composta por mata preservada, oferecendo um ambiente natural para atividades ao ar livre 
+      </p>
+      <p>
+        O tempo necessário para percorrer as trilhas do Parque Estadual do Sítio do Rangedor, em São Luís, Maranhão, varia conforme o percurso escolhido e o ritmo do visitante. Trilha de 3,38 km: Este percurso circular, com desnível positivo de apenas 3 metros, é considerado de dificuldade fácil. Segundo registros no Wikiloc, o tempo em movimento para completá-la é de aproximadamente 48 minutos. Ciclovia de 3,5 km: Ideal para caminhadas, corridas e ciclismo, essa trilha é geralmente concluída em cerca de 52 minutos, de acordo com informações do AllTrails
+      </p>
+    </div>
+  </div>
 
     <footer>
         <div class="container">
