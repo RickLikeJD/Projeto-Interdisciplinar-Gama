@@ -1,0 +1,156 @@
+/* ../css/login-custom.css */
+
+/* General Resets and Base Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 100%; 
+}
+
+.card-body {
+    padding: 35px 40px;
+}
+
+.card-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #454545;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    background-color: #f0f3f5;
+    border: 1px solid #dde2e7;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #7A5CFA;
+    box-shadow: 0 0 0 0.2rem rgba(122, 92, 250, 0.2);
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #7A5CFA;
+    border-color: #7A5CFA;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(122, 92, 250, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #6546E0;
+    border-color: #6546E0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(122, 92, 250, 0.3);
+}
+.btn-primary:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 12px rgba(122, 92, 250, 0.2);
+}
+
+.mt-3 p {
+    color: #666;
+    font-size: 0.9rem;
+}
+.mt-3 a {
+    color: #7A5CFA;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mt-3 a:hover {
+    color: #5a3fcf;
+    text-decoration: underline;
+}
+
+.alert-danger {
+    background-color: #FEECEE;
+    color: #A92334;
+    border: 1px solid #F8B9C1;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* Dark Mode Specific Styles */
+body.dark-mode {
+    background-color: #1A1D24; 
+    color: #E0E0E0; 
+}
+
+.dark-mode .card {
+    background-color: #252A33; 
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); 
+}
+
+.dark-mode .card-title { color: #ffffff; }
+.dark-mode .form-label { color: #B0B0B0; }
+.dark-mode .form-control {
+    background-color: #1E222A; 
+    color: #E0E0E0; 
+    border-color: #3A3F4A; 
+}
+.dark-mode .form-control::placeholder { color: #6c757d; }
+.dark-mode .form-control:focus {
+    background-color: #252A33;
+    border-color: #8A70FD; 
+    box-shadow: 0 0 0 0.2rem rgba(138, 112, 253, 0.25);
+    color: #E0E0E0;
+}
+.dark-mode .btn-primary { box-shadow: 0 4px 12px rgba(122, 92, 250, 0.25); }
+.dark-mode .btn-primary:hover { box-shadow: 0 6px 18px rgba(122, 92, 250, 0.35); }
+.dark-mode .mt-3 p { color: #A0A0A0; }
+.dark-mode .mt-3 a { color: #8A70FD; }
+.dark-mode .mt-3 a:hover { color: #A088FF; }
+.dark-mode .alert-danger {
+     background-color: #4A2A2E; 
+     color: #F5C0C6; 
+     border-color: #7A3E46;
+}

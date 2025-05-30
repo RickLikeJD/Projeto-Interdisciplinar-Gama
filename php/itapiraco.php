@@ -63,11 +63,5 @@
   </div>
 
 </footer>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <p>&copy; 2023 Reserva do Itapiracó. Todos os direitos reservados.</p>
-    </div>
-  </div>
-</body>
-</html>
+
+<?php include 'footer.php'; ?>

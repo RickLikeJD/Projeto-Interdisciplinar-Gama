@@ -65,6 +65,8 @@
 
       echo "<p><strong>Obrigado, $nome! Sua mensagem foi recebida.</strong></p>";
     }
+
+    // Later i will made a table in database to register ts 🥀
   ?>
 </section>
 
