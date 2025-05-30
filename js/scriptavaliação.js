@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Erro:', error);
                 alert('Ocorreu um erro ao enviar sua avaliação: ' + error.message);
             });
-            */
+            
             
         });
     } else {
