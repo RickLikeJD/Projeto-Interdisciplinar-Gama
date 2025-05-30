@@ -1,253 +1,265 @@
+/* === GLOBAL === */
 body {
-font-family: sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-color: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .container {
-max-width: 1200px;
-margin: 0 auto;
-padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.button {
-display: inline-block;
-padding: 10px 20px;
-background-color: #5cb85c;
-color: white;
-text-decoration: none;
-border-radius: 5px;
-transition: background-color 0.3s ease;
+.button,
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.button.secondary {
-background-color: #007bff; 
+.button.secondary,
+.btn-secondary {
+  background-color: #4cae4c;
 }
 
-.button:hover, .button.secondary:hover {
-background-color: #4cae4c;
-opacity: 0.9;
+.button:hover,
+.btn:hover,
+.button.secondary:hover,
+.btn-secondary:hover {
+  background-color: #2ff82f;
+  opacity: 0.9;
 }
 
+/* === HEADER === */
 header {
-background: url('https://via.placeholder.com/1200x400/2E8B57/FFFFFF?Text=Imagem+de+Floresta') no-repeat center center;
-background-size: cover;
-color: rgb(121, 116, 116);
-padding: 20px 0;
-text-align: center;
+  background: url('https://via.placeholder.com/1200x400/2E8B57/FFFFFF?Text=Imagem+de+Floresta') no-repeat center center;
+  background-size: cover;
+  color: rgb(119, 118, 118);
+  padding: 20px 0;
+  text-align: center;
 }
 
+/* === NAVIGATION === */
 nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 nav .logo a {
-color: rgb(175, 174, 174);
-font-size: 1.5em;
-text-decoration: none;
-font-weight: bold;
+  color: rgb(175, 174, 174);
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-color: white;
-text-decoration: none;
-transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-color: #ccc;
+  color: #ccc;
 }
 
+/* === HERO SECTION === */
 .hero {
-padding: 80px 20px;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .hero h1 {
-font-size: 2.5em;
-margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 .hero p {
-font-size: 1.2em;
-margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
+/* === TRAILS SECTION === */
 .trails-section {
-padding: 40px 20px;
-text-align: center;
-background-color: #fff;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .trails-section h2 {
-margin-bottom: 20px;
-}
-
-.trails-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 30px;
-margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .trail-card {
-background-color: #fff;
-border: 1px solid #ddd;
-border-radius: 8px;
-overflow: hidden;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .trail-card img {
-width: 100%;
-display: block;
-height: auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
-.trail-card h3 {
-padding: 15px;
-margin: 0;
-font-size: 1.3em;
+.trail-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 15px;
 }
 
-.trail-card p {
-padding: 0 15px 15px;
-margin: 0;
-color: #666;
+.trail-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
 }
 
-.trail-card .button.secondary {
-display: block;
-width: calc(100% - 30px);
-margin: 15px;
-text-align: center;
+.trail-card .card-text {
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1;
 }
 
+.trail-card .btn {
+  align-self: stretch;
+  margin-top: auto;
+}
+
+/* === VIEW ALL LINK === */
 .view-all a {
-color: #007bff;
-text-decoration: none;
-font-weight: bold;
-transition: color 0.3s ease;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .view-all a:hover {
-color: #0056b3;
+  color: #0056b3;
 }
 
+/* === ABOUT SECTION === */
 .about-section {
-padding: 40px 20px;
-background-color: #f9f9f9;
-text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .about-section h2 {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .about-section p {
-line-height: 1.6;
-color: #555;
+  line-height: 1.6;
+  color: #555;
 }
 
+/* === CONTACT SECTION === */
 .contact-section {
-padding: 40px 20px;
-background-color: #fff;
-text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .contact-section h2 {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-section p {
-margin-bottom: 20px;
-color: #555;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 .contact-section form {
-max-width: 500px;
-margin: 0 auto;
-text-align: left;
-padding: 20px;
-border: 1px solid #ddd;
-border-radius: 8px;
-background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
 .form-group {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-display: block;
-margin-bottom: 5px;
-font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .form-group input,
 .form-group textarea {
-width: calc(100% - 12px);
-padding: 8px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .form-group textarea {
-resize: vertical;
+  resize: vertical;
 }
 
 .contact-section button.button {
-width: 100%;
+  width: 100%;
 }
 
+/* === FOOTER === */
 footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 20px;
-font-size: 0.9em;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
 
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-nav ul {
-flex-direction: column;
-text-align: center;
-}
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
 
-nav ul li {
+  nav ul li {
     margin: 10px 0;
-}
+  }
 
-.trails-grid {
-    grid-template-columns: 1fr;
-}
-
-.hero {
+  .hero {
     padding: 60px 20px;
-}
+  }
 
-.hero h1 {
+  .hero h1 {
     font-size: 2em;
-}
+  }
 
-.hero p {
+  .hero p {
     font-size: 1em;
-}
+  }
 }
