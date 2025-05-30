@@ -110,8 +110,8 @@ footer {
     background-color: #1B5E20; /* Verde mais escuro para rodapé */
     color: #E0E0E0; /* Cinza claro para texto */
     text-align: center;
-    padding: 30px 0;
-    font-size: 0.9em;
+    padding: 9px 0;
+    font-size: 0.7em;
 }
 
 footer p {
@@ -134,11 +134,11 @@ font-size: 1.8em;
 }
 
 .texto p {
-  font-size: 17px;
-  color: #444;
+  font-size: 15px;
+  color: #0c0c0c;
   line-height: 1.7;
   text-align: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
