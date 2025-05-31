@@ -36,7 +36,7 @@
           <img src="../img/rangedor.jpeg" alt="Parque do Rangedor">
           <div class="card-body ">
             <h5 class="card-title">Trilhas do Parque do Rangedor</h5>
-            <p class="card-text">Nível: Fácil | Distância: 3.8km | Duração: 55 Minutos</p>
+            <p class="card-text">Nível: médio | Distância: 3.8km | Duração: 55 Minutos</p>
             <a href="http://localhost/projeto-interdisciplinar/php/rangedor.php" class="btn btn-primary mt-auto">Detalhes</a>
           </div>
         </div>
