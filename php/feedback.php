@@ -24,7 +24,7 @@
                     <label for="feedbackText" class="block text-sm font-medium text-gray-700 mb-1">Seu Comentário:</label>
                     <textarea id="feedbackText" name="feedbackText" rows="5"
                         class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition duration-150 ease-in-out placeholder-gray-400"
-                        placeholder="Digite seus comentários aqui..."></textarea>
+                        placeholder="Deixe seu comentário aqui..."></textarea>
                 </div>
 
                 <button type="submit"
