@@ -1,69 +1,39 @@
-/* Estilo geral da Navbar */
+/* ====== Estilo Global ====== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Navbar ====== */
 .navbar {
-    background-color: #ffffff !important; /* Fundo branco */
-    border-bottom: 1px solid #e7e7e7; /* Linha sutil de separação */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra para dar profundidade */
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-/*} ee*/
-
-/* Estilo da sua marca (Logo + Nome) */
-.navbar-brand span {
-    font-weight: 600; /* Deixa o nome "Gama" mais forte */
-    color: #333 !important; /* Cor mais escura para melhor contraste */
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-/* Estilo para os links de navegação */
-.navbar-nav .nav-link {
-    color: #555 !important; /* Cor mais suave para os links */
-    font-weight: 500;
-    margin: 0 10px;
-    padding: 8px 0;
-    border-bottom: 2px solid transparent; /* Borda transparente para o efeito de hover */
-    transition: all 0.3s ease;
+.navbar .nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important; /* Azul padrão Bootstrap */
 }
 
-/* Efeito ao passar o mouse sobre os links */
-.navbar-nav .nav-link:hover {
-    color: #27ae60 !important; /* Sua cor verde ao passar o mouse */
-    border-bottom-color: #27ae60; /* Mostra a borda inferior */
-}
-
-/* Estilo do link da página ativa */
-.navbar-nav .nav-link.active {
-    color: #27ae60 !important;
-    font-weight: 700;
-    border-bottom-color: #27ae60;
-}
-
-/* Botão de Login (para dar mais destaque) */
+/* ====== Botão de Login ====== */
 .btn-login {
-    background-color: #27ae60; /* Sua cor verde como fundo */
-    color: white !important;
-    border-radius: 50px; /* Bordas arredondadas */
-    padding: 8px 25px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #0d6efd;
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: background 0.3s;
 }
-
 .btn-login:hover {
-    background-color: #229954; /* Um tom de verde um pouco mais escuro */
-    transform: translateY(-2px); /* Efeito de "levantar" o botão */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #0b5ed7;
 }
 
-/* Ajustes no dropdown do usuário */
-.dropdown-menu {
-    border: 1px solid #f0f0f0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* ====== Páginas de Login e Cadastro ====== */
+.auth-page {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
 }
-
-.dropdown-item:hover {
-    background-color: #f8f9fa;
+.auth-page .navbar {
+  display: none;
 }
-
-.dropdown-item.text-danger:hover {
-    background-color: #fbebeb;
-    color: #c82333 !important;
-}}
