@@ -13,7 +13,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
   <title><?= $isAuthPage ? 'Login - Gama' : 'Gama' ?></title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/stylehed.css">
 
   <?php if ($isAuthPage): ?>
   <style>
@@ -37,7 +37,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link <?= $currentPage=='trilhas.php' ? 'active' : '' ?>" href="trilhas.php">Trilhas</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage=='trilhas.php' ? 'active' : '' ?>" href="gamainicial.php">Trilhas</a></li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='sobre.php' ? 'active' : '' ?>" href="sobre.php">Sobre</a></li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="contato.php">Contato</a></li>
 
