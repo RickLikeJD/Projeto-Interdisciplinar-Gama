@@ -5,26 +5,56 @@ body {
 }
 
 /* ====== Navbar ====== */
-.navbar {
-  background: #fff;
-  border-bottom: 1px solid #eee;
+/* Animação nos links da navbar */
+.navbar .nav-link {
+  position: relative;
+  color: #000; /* cor padrão */
+  transition: color 0.3s ease;
 }
 
-.navbar .nav-link.active {
-  font-weight: bold;
-  color: #0d6efd !important; /* Azul padrão Bootstrap */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* distância da linha */
+  width: 0%;
+  height: 2px;
+  background-color: #2ecc71; /* verde */
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2ecc71; /* texto fica verde */
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    color: #27ae60 !important; /* Sua cor verde ao passar o mouse */
+    border-bottom-color: #27ae60; /* Mostra a borda inferior */
+}
+
+/* Estilo do link da página ativa */
+.navbar-nav .nav-link.active {
+    color: #27ae60 !important;
+    font-weight: 700;
+    border-bottom-color: #27ae60;
+}
+.navbar-nav .nav-link {
+    border-bottom: 2px solid transparent; /* Borda inferior transparente por padrão */
+    transition: border-bottom-color 0.3s; /* Transição suave para a borda */
 }
 
 /* ====== Botão de Login ====== */
 .btn-login {
-  background-color: #0d6efd;
+  background-color: #198754;
   color: #fff !important;
-  border-radius: 20px;
-  padding: 6px 16px;
-  transition: background 0.3s;
+  border-radius: 6px; /* deixa quadradinho */
+  padding: 6px 16px;    
 }
+
 .btn-login:hover {
-  background-color: #0b5ed7;
+  background-color: #2ecc71;
 }
 
 /* ====== Páginas de Login e Cadastro ====== */
