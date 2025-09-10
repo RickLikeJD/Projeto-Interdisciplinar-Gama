@@ -37,15 +37,19 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item dropdown-custom">
-    <a class="nav-link" href="categorias.php">Categorias</a>
-    <ul class="dropdown-menu-custom">
-        <li><a class="dropdown-item-custom" href="gamainicial.php">trilhas</a></li>
-        <li><a class="dropdown-item-custom" href="#">Ficção Científica</a></li>
-        <li><a class="dropdown-item-custom" href="#">Fantasia</a></li>
-        <li><a class="dropdown-item-custom" href="#">Terror</a></li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategorias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Categorias
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategorias">
+        <li><a class="dropdown-item" href="gamainicial.php">trilhas</a></li>
+        <li><a class="dropdown-item" href="#">Ficção Científica</a></li>
+        <li><a class="dropdown-item" href="#">Fantasia</a></li>
+        <li><a class="dropdown-item" href="#">Terror</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Ver Todas</a></li>
     </ul>
-</li> 
+  </li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='sobre.php' ? 'active' : '' ?>" href="sobre.php">Sobre</a></li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="contato.php">Contato</a></li>
 

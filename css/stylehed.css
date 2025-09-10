@@ -72,6 +72,34 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease; /* Transição para opacidade e movimento */
 }
 
+/* Container do dropdown */
+.nav-item.dropdown-custom {
+    position: relative; /* Essencial para o posicionamento do menu */
+}
+
+/* Oculta e estiliza o menu suspenso */
+.dropdown-menu-custom {
+    display: block; /* Garante que o menu seja um bloco */
+    position: absolute;
+    top: 100%; /* Posiciona o menu abaixo do botão "Categorias" */
+    left: 0;
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #343a40; /* Cor de fundo do seu navbar */
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    z-index: 1000;
+
+    /* Estilos de animação */
+    opacity: 0; /* Começa com opacidade 0 */
+    visibility: hidden; /* Esconde o elemento do layout */
+    transform: translateY(-10px); /* Começa um pouco acima da posição final */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição para opacidade e movimento */
+}
+
 /* Mostra o menu quando o mouse passa sobre o item do menu */
 .nav-item.dropdown-custom:hover .dropdown-menu-custom {
     opacity: 1; /* Transiciona para opacidade total */
@@ -90,10 +118,6 @@ body {
     white-space: nowrap;
 }
 
-.dropdown-menu-custom li a:hover {
-    color: #fff;
-    background-color: #007bff; /* Cor de destaque ao passar o mouse */
-}
 
 /* ====== Botão de Login ====== */
 /* Botão de login */
