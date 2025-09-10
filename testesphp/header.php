@@ -32,7 +32,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <?php endif; ?>
 </head>
 <body>
-
+//
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="gamainicial.php">Gama</a>
