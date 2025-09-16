@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'header2.php'; ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/estilo.css">
 

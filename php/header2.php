@@ -13,7 +13,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
   <title><?= $isAuthPage ? 'Login - Gama' : 'Gama' ?></title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/stylehed.css">
 
   <?php if ($isAuthPage): ?>
   <style>
@@ -37,7 +37,19 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link <?= $currentPage=='trilhas.php' ? 'active' : '' ?>" href="trilhas.php">Trilhas</a></li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategorias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Categorias
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategorias">
+        <li><a class="dropdown-item" href="gamainicial.php">trilhas</a></li>
+        <li><a class="dropdown-item" href="#">Ficção Científica</a></li>
+        <li><a class="dropdown-item" href="#">Fantasia</a></li>
+        <li><a class="dropdown-item" href="#">Terror</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Ver Todas</a></li>
+    </ul>
+  </li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='sobre.php' ? 'active' : '' ?>" href="sobre.php">Sobre</a></li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="contato.php">Contato</a></li>
 
@@ -55,7 +67,8 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
           </li>
         <?php else: ?>
           <li class="nav-item ms-lg-3">
-            <a class="nav-link btn btn-login" href="login.php">Login</a>
+            <a class="nav-link btn btn-login" href="login.php">Login</a>  
+    
           </li>
         <?php endif; ?>
       </ul>

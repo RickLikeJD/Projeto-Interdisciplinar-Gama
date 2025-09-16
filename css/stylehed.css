@@ -1,0 +1,142 @@
+/* ====== Estilo Global ====== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Navbar ====== */
+/* Animação nos links da navbar */
+.navbar .nav-link {
+  position: relative;
+  color: #000; /* cor padrão */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* distância da linha */
+  width: 0%;
+  height: 2px;
+  background-color: #2ecc71; /* verde */
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2ecc71; /* texto fica verde */
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    color: #27ae60 !important; /* Sua cor verde ao passar o mouse */
+    border-bottom-color: #27ae60; /* Mostra a borda inferior */
+}
+
+/* Estilo do link da página ativa */
+.navbar-nav .nav-link.active {
+    color: #27ae60 !important;
+    font-weight: 700;
+    border-bottom-color: #27ae60;
+}
+.navbar-nav .nav-link {
+    border-bottom: 2px solid transparent; /* Borda inferior transparente por padrão */
+    transition: border-bottom-color 0.3s; /* Transição suave para a borda */
+}
+/* Container do dropdown */
+.nav-item.dropdown-custom {
+    position: relative; /* Essencial para o posicionamento do menu */
+}
+
+/* Oculta e estiliza o menu suspenso */
+.dropdown-menu-custom {
+    display: block; /* Garante que o menu seja um bloco */
+    position: absolute;
+    top: 100%; /* Posiciona o menu abaixo do botão "Categorias" */
+    left: 0;
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #343a40; /* Cor de fundo do seu navbar */
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    z-index: 1000;
+
+    /* Estilos de animação */
+    opacity: 0; /* Começa com opacidade 0 */
+    visibility: hidden; /* Esconde o elemento do layout */
+    transform: translateY(-10px); /* Começa um pouco acima da posição final */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição para opacidade e movimento */
+}
+
+/* Container do dropdown */
+.nav-item.dropdown-custom {
+    position: relative; /* Essencial para o posicionamento do menu */
+}
+
+/* Oculta e estiliza o menu suspenso */
+.dropdown-menu-custom {
+    display: block; /* Garante que o menu seja um bloco */
+    position: absolute;
+    top: 100%; /* Posiciona o menu abaixo do botão "Categorias" */
+    left: 0;
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #343a40; /* Cor de fundo do seu navbar */
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    z-index: 1000;
+
+    /* Estilos de animação */
+    opacity: 0; /* Começa com opacidade 0 */
+    visibility: hidden; /* Esconde o elemento do layout */
+    transform: translateY(-10px); /* Começa um pouco acima da posição final */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição para opacidade e movimento */
+}
+
+/* Mostra o menu quando o mouse passa sobre o item do menu */
+.nav-item.dropdown-custom:hover .dropdown-menu-custom {
+    opacity: 1; /* Transiciona para opacidade total */
+    visibility: visible; /* Torna o elemento visível */
+    transform: translateY(0); /* Move para a posição final */
+}
+
+/* Estilo para os itens do menu suspenso */
+.dropdown-menu-custom li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/* ====== Botão de Login ====== */
+/* Botão de login */
+.btn-login {
+  background-color: #198754;
+  color: #fff !important;
+  border-radius: 6px; /* deixa quadradinho */
+  padding: 6px 16px;    
+}
+
+
+/* ====== Páginas de Login e Cadastro ====== */
+.auth-page {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+.auth-page .navbar {
+  display: none;
+}
+
