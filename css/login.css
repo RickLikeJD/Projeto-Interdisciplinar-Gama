@@ -6,7 +6,7 @@ body {
     color: #555; /* Ensure this contrasts with your image or card background */
     
     /* --- Background Image Settings --- */
-    background-image: url('..img/login.jpeg'); /* <<< CHANGE THIS PATH to your image */
+    background-image: url('..img/login2.jpg'); /* <<< CHANGE THIS PATH to your image */
     background-size: cover;         /* Scales to cover the entire viewport, maintains aspect ratio, crops if necessary */
     background-position: center center; /* Centers the image */
     background-repeat: no-repeat;     /* Prevents tiling */
