@@ -90,7 +90,7 @@ include 'header.php';
             <div class="col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-body p-4">
-                        <h2 class="card-title text-center mb-4">Login</h2>
+                        <h2 class="card-title text-center mb-4">EcoWay</h2>
 
                         <?php
                         if (!empty($login_error_message)) {
@@ -109,6 +109,17 @@ include 'header.php';
                             </div>
                             <div class="d-grid mt-4"> 
                                 <button type="submit" class="btn btn-primary">Login</button>
+                                <div class="social-login text-center">
+                                 <p>Ou entre com:</p>
+                                <button class="btn-google">
+                                <img src="https://img.icons8.com/color/16/000000/google-logo.png"/> 
+                                  Login com Google
+                                </button>
+                               <button class="btn-facebook">
+                              <img src="https://img.icons8.com/color/16/000000/facebook-new.png"/> 
+                             Login com Facebook
+                               </button>
+                                </div>
                             </div>
                         </form>
                         <div class="mt-3 text-center">
@@ -118,7 +129,7 @@ include 'header.php';
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
