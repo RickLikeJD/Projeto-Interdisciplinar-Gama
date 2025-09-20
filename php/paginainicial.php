@@ -5,7 +5,7 @@ if ($conn->connect_error) {
     die("Erro de conexão: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM produtos ORDER BY criado_em DESC";
+$sql = "SELECT * FROM tbProdutos ORDER BY data_criacao DESC";
 $result = $conn->query($sql);
 ?>
 
@@ -14,33 +14,29 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Minha Loja</title>
-    <style>
-        .produto {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin: 10px;
-            width: 250px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .produto img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <!-- Importando o CSS externo -->
+    <link rel="stylesheet" href="../css/inicial.css">
 </head>
 <body>
     <h1>Produtos</h1>
     <a href="adicionar.php">+ Adicionar Produto</a>
-    <div>
-        <?php while($row = $result->fetch_assoc()): ?>
-            <div class="produto">
-                <img src="<?php echo $row['imagem']; ?>" alt="Imagem do produto">
-                <h2><?php echo $row['titulo']; ?></h2>
-                <p><?php echo $row['descricao']; ?></p>
-                <p><strong>R$ <?php echo number_format($row['preco'], 2, ',', '.'); ?></strong></p>
-            </div>
-        <?php endwhile; ?>
+    <div class="container">
+        <?php if ($result && $result->num_rows > 0): ?>
+            <?php while($row = $result->fetch_assoc()): ?>
+                <div class="produto">
+                    <?php if (!empty($row['imagem'])): ?>
+                        <img src="<?php echo $row['imagem']; ?>" alt="Imagem do produto">
+                    <?php else: ?>
+                        <img src="sem-imagem.png" alt="Sem imagem">
+                    <?php endif; ?>
+                    <h2><?php echo htmlspecialchars($row['titulo']); ?></h2>
+                    <p><?php echo nl2br(htmlspecialchars($row['descricao'])); ?></p>
+                    <p><strong>R$ <?php echo number_format($row['preco'], 2, ',', '.'); ?></strong></p>
+                </div>
+            <?php endwhile; ?>
+        <?php else: ?>
+            <p>Nenhum produto cadastrado ainda.</p>
+        <?php endif; ?>
     </div>
 </body>
 </html>
