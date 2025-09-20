@@ -27,7 +27,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
 <?php if (!$isAuthPage): ?>
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="gamainicial.php">Gama</a>
+    <a class="navbar-brand" href="gamainicial.php">Ecoway</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
@@ -51,7 +51,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
     </ul>
   </li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='sobre.php' ? 'active' : '' ?>" href="sobre.php">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="contato.php">Contato</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="contato.php">add+ produto</a></li>
 
         <?php if (isset($_SESSION['usuario_id'])): ?>
           <li class="nav-item dropdown">
