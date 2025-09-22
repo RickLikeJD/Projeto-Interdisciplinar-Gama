@@ -144,3 +144,50 @@ body {
 .nav-item.dropdown-custom > .nav-link::after {
     display: none;
 }
+/* ================================
+   Estilos do Carrinho Lateral
+=================================*/
+
+.carrinho {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 1050;
+}
+
+.carrinho h2 {
+  padding-left: 20px;
+}
+
+.carrinho .fechar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.carrinho ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.carrinho ul li {
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Estilo do botão remover dentro do carrinho */
+.carrinho button {
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
