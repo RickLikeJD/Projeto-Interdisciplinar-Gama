@@ -140,9 +140,9 @@ body {
   display: none;
 }
 
-/* Remove a seta do dropdown */
-.nav-item.dropdown-custom > .nav-link::after {
-    display: none;
+/* Remove a seta do dropdown do Bootstrap */
+.navbar .nav-item.dropdown > .nav-link::after {
+    display: none !important;
 }
 /* carrinho.css
    Painel do carrinho alinhado à direita com animação de slide
