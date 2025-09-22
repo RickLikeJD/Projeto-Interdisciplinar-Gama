@@ -71,20 +71,9 @@ $nome_trilha_atual = "parque do rangedor"; // Exemplo
     </main>
 
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="currentYear"></span> Parque Estadual do Sítio do Rangedor. Todos os direitos reservados.</p>
-            <p>Governo do Estado do Maranhão | Secretaria de Meio Ambiente e Recursos Naturais (SEMA)</p>
-            <div class="social-links">
-                <a href="#">[Facebook]</a>
-                <a href="#">[Instagram]</a>            
-            </div>
-        </div>
-    </footer>
-
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
-
+<?php include 'footer.php'; ?>
 </body>
 </html>

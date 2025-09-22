@@ -1,20 +1,35 @@
 <footer class="footer">
-  <div class="container">
+  <div class="footer-content">
     <p>&copy; 2023-<?php echo date('Y'); ?> <a href="#">Gama</a></p>
-    <p>Desenvolvido por <a >Isaque, Hiago e Hugo</a></p>
+    <p>Desenvolvido por: <a >Isaque, Hiago e Hugo</a></p>
   </div>
 </footer>
 
 <style>
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* ocupa todo o espaço disponível */
+}
+
+
 footer.footer {
-    background-color: #1f1f1f;
-    color: #d1d1d1;
+    background-color: #048a2cff;
+    color: #030303ff;
     border-top: 1px solid #333;
     padding: 20px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     width: 100%;      /* ocupa toda a largura */
+    margin-top: auto;
 }
 
-footer .container {
+footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +45,7 @@ footer p {
 }
 
 footer a {
-    color: #d1d1d1;
+    color: #000000ff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -41,7 +56,7 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    footer .container {
+    footer .footer-content {
         flex-direction: column;
         align-items: flex-start;
     }
