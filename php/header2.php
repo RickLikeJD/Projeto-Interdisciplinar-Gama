@@ -51,7 +51,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
     </ul>
   </li>
         <li class="nav-item"><a class="nav-link <?= $currentPage=='sobre.php' ? 'active' : '' ?>" href="sobre.php">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="produtos.php">add+ produto</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage=='contato.php' ? 'active' : '' ?>" href="produtos.php">adicionar produtos</a></li>
 
         <?php if (isset($_SESSION['usuario_id'])): ?>
           <li class="nav-item dropdown">

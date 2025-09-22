@@ -140,3 +140,7 @@ body {
   display: none;
 }
 
+/* Remove a seta do dropdown */
+.nav-item.dropdown-custom > .nav-link::after {
+    display: none;
+}
