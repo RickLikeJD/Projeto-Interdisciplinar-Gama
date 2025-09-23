@@ -1,7 +1,18 @@
 <footer class="footer">
   <div class="footer-content">
-    <p>&copy; 2023-<?php echo date('Y'); ?> <a href="#">Gama</a></p>
-    <p>Desenvolvido por: <a >Isaque, Hiago e Hugo</a></p>
+    <p>&copy; 2023-<?php echo date('Y'); ?> <a href="#">EcoWay</a></p>   
+
+<div>
+<button class="btn-instagram">
+<img src="../img/instagram2.jpeg"/> 
+</button>
+
+<button class="btn-facebook">
+<img src="https://img.icons8.com/color/16/000000/facebook-new.png"/> 
+ 
+</button>
+</div>
+
   </div>
 </footer>
 
@@ -20,9 +31,9 @@ main {
 
 
 footer.footer {
-    background-color: #048a2cff;
-    color: #030303ff;
-    border-top: 1px solid #333;
+    background-color: #e5e8e6ff;
+    color: #000000ff;
+    border-top: 1px solid #ffffffff;
     padding: 20px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      width: 100%;      /* ocupa toda a largura */
@@ -64,4 +75,36 @@ footer a:hover {
         margin-bottom: 8px;
     }
 }
+
+/* Botão instagram */
+.btn-instagram {
+  background-color: #ffffffff;
+  color: #e1d9d9ff;
+  border: 0px solid #ccc;
+}
+.btn-instagram:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-instagram img {
+    width: 50px;   /* diminui a largura */
+    height: 50px;  /* mantém proporcional */
+    margin-right: 0px; /* espaço entre logo e texto */
+    vertical-align: middle;
+}
+
+.btn-instagram img {
+  border-radius: 50%; /* deixa redondo */
+}
+
+
+/* Botão Facebook */
+.btn-facebook {
+  background-color: #1877f2;
+  color: #fff;
+}
+.btn-facebook:hover {
+  background-color: #145dbf;
+}
+
 </style>
