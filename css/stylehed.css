@@ -1,154 +1,89 @@
-/* ====== Estilo Global ====== */
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --verde-principal: #27ae60;
+  --verde-hover: #2ecc71;
 }
 
 /* ====== Navbar ====== */
-/* Animação nos links da navbar */
 .navbar .nav-link {
   position: relative;
-  color: #000; /* cor padrão */
-  transition: color 0.3s ease;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s;
 }
 
 .navbar .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px; /* distância da linha */
-  width: 0%;
+  bottom: -4px;
+  width: 0;
   height: 2px;
-  background-color: #2ecc71; /* verde */
+  background-color: var(--verde-hover);
   transition: width 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-  color: #2ecc71; /* texto fica verde */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--verde-hover);
+  border-bottom-color: var(--verde-principal);
 }
 
-
-
-.navbar-nav .nav-link:hover {
-    color: #27ae60 !important; /* Sua cor verde ao passar o mouse */
-    border-bottom-color: #27ae60; /* Mostra a borda inferior */
-}
-
-/* Estilo do link da página ativa */
 .navbar-nav .nav-link.active {
-    color: #27ae60 !important;
-    font-weight: 700;
-    border-bottom-color: #27ae60;
+  color: var(--verde-principal) !important;
+  font-weight: 700;
+  border-bottom-color: var(--verde-principal);
 }
-.navbar-nav .nav-link {
-    border-bottom: 2px solid transparent; /* Borda inferior transparente por padrão */
-    transition: border-bottom-color 0.3s; /* Transição suave para a borda */
-}
-/* Container do dropdown */
+
+/* Dropdown custom */
 .nav-item.dropdown-custom {
-    position: relative; /* Essencial para o posicionamento do menu */
+  position: relative;
+}
+.dropdown-toggle::after {
+  display: none !important;
 }
 
-/* Oculta e estiliza o menu suspenso */
 .dropdown-menu-custom {
-    display: block; /* Garante que o menu seja um bloco */
-    position: absolute;
-    top: 100%; /* Posiciona o menu abaixo do botão "Categorias" */
-    left: 0;
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #343a40; /* Cor de fundo do seu navbar */
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    z-index: 1000;
-
-    /* Estilos de animação */
-    opacity: 0; /* Começa com opacidade 0 */
-    visibility: hidden; /* Esconde o elemento do layout */
-    transform: translateY(-10px); /* Começa um pouco acima da posição final */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição para opacidade e movimento */
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  background-color: #343a40;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.175);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Container do dropdown */
-.nav-item.dropdown-custom {
-    position: relative; /* Essencial para o posicionamento do menu */
-}
-
-/* Oculta e estiliza o menu suspenso */
-.dropdown-menu-custom {
-    display: block; /* Garante que o menu seja um bloco */
-    position: absolute;
-    top: 100%; /* Posiciona o menu abaixo do botão "Categorias" */
-    left: 0;
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #343a40; /* Cor de fundo do seu navbar */
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    z-index: 1000;
-
-    /* Estilos de animação */
-    opacity: 0; /* Começa com opacidade 0 */
-    visibility: hidden; /* Esconde o elemento do layout */
-    transform: translateY(-10px); /* Começa um pouco acima da posição final */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição para opacidade e movimento */
-}
-
-/* Mostra o menu quando o mouse passa sobre o item do menu */
 .nav-item.dropdown-custom:hover .dropdown-menu-custom {
-    opacity: 1; /* Transiciona para opacidade total */
-    visibility: visible; /* Torna o elemento visível */
-    transform: translateY(0); /* Move para a posição final */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-/* Estilo para os itens do menu suspenso */
 .dropdown-menu-custom li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    clear: both;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    white-space: nowrap;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-
-/* ====== Botão de Login ====== */
-/* Botão de login */
+/* Botão de Login */
 .btn-login {
-  background-color: #198754;
+  background-color: var(--verde-principal);
   color: #fff !important;
-  border-radius: 6px; /* deixa quadradinho */
+  border-radius: 6px;
   padding: 6px 16px;    
 }
 
+/* Carrinho (slide lateral) */
 
-/* ====== Páginas de Login e Cadastro ====== */
-.auth-page {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  min-height: 100vh;
-}
-.auth-page .navbar {
-  display: none;
-}
-
-/* Remove a seta do dropdown do Bootstrap */
-.navbar .nav-item.dropdown > .nav-link::after {
-    display: none !important;
-}
-/* carrinho.css
-   Painel do carrinho alinhado à direita com animação de slide
-*/
-
-/* Overlay escuro */
 .carrinho-overlay {
   position: fixed;
   inset: 0;
@@ -159,35 +94,98 @@ body {
   z-index: 1040;
 }
 
-/* Painel do carrinho (inicialmente escondido à direita) */
-.carrinho {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 320px;
-  max-width: 90%;
-  height: 100%;
-  background: #ffffff;
-  border-left: 1px solid #ddd;
-  box-shadow: -6px 0 20px rgba(0,0,0,0.12);
-  transform: translateX(100%); /* começa fora da tela */
-  transition: transform .35s cubic-bezier(.2,.7,.2,1);
-  z-index: 1050;
-  padding-top: 60px;
-  overflow-y: auto;
-}
-
-/* Quando ativo */
-.carrinho.open {
-  transform: translateX(0);
-}
-
 .carrinho-overlay.open {
   opacity: 1;
   visibility: visible;
 }
 
-/* botão fechar */
+/* ===== Estilo Carrinho ===== */
+.carrinho {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  max-width: 90%;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  box-shadow: -6px 0 20px rgba(0,0,0,0.15);
+  transform: translateX(100%);
+  transition: transform .35s cubic-bezier(.2,.7,.2,1);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+.carrinho h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  background: #f9f9f9;
+}
+
+/* Botão fechar */
+.carrinho .fechar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #666;
+  transition: color .2s;
+}
+.carrinho .fechar:hover {
+  color: #000;
+}
+
+/* Lista de produtos */
+#lista-carrinho {
+  flex: 1;
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+  overflow-y: auto;
+}
+#lista-carrinho li {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Botão Finalizar */
+#btnFinalizar {
+  margin: 0;
+  padding: 14px;
+  background: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background .3s;
+}
+#btnFinalizar:hover {
+  background: #219150;
+}
+
+
+.carrinho.open {
+  transform: translateX(0);
+}
+
 .carrinho .fechar {
   position: absolute;
   top: 10px;

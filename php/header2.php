@@ -11,8 +11,6 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $isAuthPage ? 'Login - Gama' : 'Gama' ?></title>
-  <!-- Script do header -->
-  <script src="../js/scriptheader.js"></script>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +76,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
           </li>
         <?php endif; ?>
 
-        <!-- Botão Carrinho (imagem) -->
+        <!-- Botão Carrinho -->
         <li class="nav-item ms-3">
           <button class="btn btn-light p-0 border-0" onclick="abrirCarrinho()" aria-label="Abrir carrinho" style="background:none;">
             <img src="../img/carrinho.webp" alt="Carrinho" style="width:32px; height:32px;">
@@ -88,80 +86,25 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
     </div>
   </div>
 </nav>
+
+<!-- Overlay Carrinho -->
 <div id="carrinho-overlay" class="carrinho-overlay" onclick="fecharCarrinho()"></div>
 
+<!-- Painel Carrinho -->
 <div id="carrinho" class="carrinho" aria-hidden="true">
   <button class="fechar" onclick="fecharCarrinho()" aria-label="Fechar carrinho">&times;</button>
   <h2>Meu Carrinho</h2>
   <ul id="lista-carrinho">
     <li>Nenhum produto adicionado.</li>
   </ul>
+  <button id="btnFinalizar" style="display: none;">Finalizar Compra</button>
 </div>
 <?php endif; ?>
 
-<!-- Overlay (fecha se clicar fora) -->
-<div id="carrinho-overlay" class="carrinho-overlay" onclick="fecharCarrinho()"></div>
-
-<!-- Painel Carrinho (agora alinhado à direita via CSS) -->
-<div id="carrinho" class="carrinho" aria-hidden="true">
-  <button class="fechar" onclick="fecharCarrinho()" aria-label="Fechar carrinho">&times;</button>
-  <h2>Meu Carrinho</h2>
-  <ul id="lista-carrinho">
-    <li>Nenhum produto adicionado.</li>
-  </ul>
-</div>
-
-<script>
-  // carrinho em memória (pode ser substituído por integração com servidor/ sessão)
-  let carrinho = [];
-
-  function abrirCarrinho() {
-    document.getElementById('carrinho').classList.add('open');
-    document.getElementById('carrinho-overlay').classList.add('open');
-    document.getElementById('carrinho').setAttribute('aria-hidden', 'false');
-  }
-
-  function fecharCarrinho() {
-    document.getElementById('carrinho').classList.remove('open');
-    document.getElementById('carrinho-overlay').classList.remove('open');
-    document.getElementById('carrinho').setAttribute('aria-hidden', 'true');
-  }
-
-  function adicionarCarrinho(nome, preco) {
-    carrinho.push({ nome, preco });
-    atualizarCarrinho();
-    abrirCarrinho();
-  }
-
-  function atualizarCarrinho() {
-    let lista = document.getElementById('lista-carrinho');
-    lista.innerHTML = "";
-    if (carrinho.length === 0) {
-      lista.innerHTML = "<li>Nenhum produto adicionado.</li>";
-      return;
-    }
-    carrinho.forEach((item, index) => {
-      lista.innerHTML += `<li>
-        <span>${item.nome}</span>
-        <span>
-          R$ ${item.preco.toFixed(2).replace('.', ',')}
-          <button class="btn btn-sm btn-danger ms-2" onclick="removerCarrinho(${index})">❌</button>
-        </span>
-      </li>`;
-    });
-  }
-
-  function removerCarrinho(index) {
-    carrinho.splice(index, 1);
-    atualizarCarrinho();
-  }
-
-  // fecha com Esc
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') fecharCarrinho();
-  });
-</script>
-
+<!-- Scripts -->
+<script src="../js/scriptheader.js"></script>
+<script src="../js/scriptheader2.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
