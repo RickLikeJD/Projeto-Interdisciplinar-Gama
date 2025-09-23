@@ -1,0 +1,49 @@
+/* Footer geral */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container de redes sociais */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Botões de redes sociais */
+.social-media a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre ícone e texto */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover */
+.social-media a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Ícones */
+.social-icon {
+    width: 32px;  /* tamanho fixo */
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Texto do Instagram */
+.social-text {
+    font-size: 14px;
+    color: #333;
+}

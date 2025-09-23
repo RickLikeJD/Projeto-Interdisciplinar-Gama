@@ -1,74 +1,11 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projetos - Empresa</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    
-    <header>
-        <div class="container" id="nav-container">
-          <?php
-            include('navbar.php');
-          ?>
-        </div>
-    </header>
-    <main>
-      <div class="container-fluid">
-        <div class="container mt-4">
-          <div class="row">
-            <div class="col mt-12">
-              <div class="card">
-                <div class="card-header">
-                  <?php
-                    switch(@$_REQUEST["page"]){
-                      case "projeto-listar":
-                        include('projeto-listar.php');
-                        break;
-                      case "funcionario-listar":
-                        include('funcionario-listar.php');
-                        break;
-                      case "funcionario-create":
-                        include('funcionario-create.php');
-                        break;
-                      case "funcionario-editar":
-                        include('funcionario-edit.php');
-                        break;
-                      case "dependente-listar":
-                        include('dependente-listar.php');
-                        break;
-                      case "departamento-listar":
-                        include('departamento-listar.php');
-                        break;
-                      default:
-                        print"<h1>Bem vindos!!!</h1>";
-                    }
-                  ?>
-                </div>  
-              </div>
-            </div>
-          </div>
-        </div>
+<?php include 'header2.php'; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/estilo.css">
+  <section id="informações" class="info-section py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Bem-vindo ao Ecoway</h1>
+      <p class="text-center">Explore trilhas incríveis, cachoeiras lindas, paisagens lindas e mais outras excurções.</p>
+      <div>
+        <img src="../img/dunas.webp" class="img"
       </div>
-    </main>
-    <!-- Rodapé -->
-    <footer>
-      <div id="copy-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                      Desenvolvido pelo Prof. Edilson Lima &copy; 2024
-                    </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </footer>
-    
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
-
+    </div>
