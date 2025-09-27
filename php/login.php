@@ -67,7 +67,7 @@ if (isset($CORPO_ESCURO) && $CORPO_ESCURO === true) { // Assuming $CORPO_ESCURO 
 ?>
 
 <?php
-include 'header.php'; 
+include 'header2.php';
 ?>
 <head>
     <meta charset="UTF-8">

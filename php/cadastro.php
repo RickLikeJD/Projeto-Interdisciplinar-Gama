@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<?php include 'header.php'; // Seu cabeçalho HTML ?>
+<?php include 'header2.php'; // Seu cabeçalho HTML ?>
 
 <head>
     <meta charset="UTF-8">
