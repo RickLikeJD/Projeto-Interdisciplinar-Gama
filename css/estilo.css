@@ -36,6 +36,90 @@ body {
   background-color: #2ff82f;
   opacity: 0.9;
 }
+/* Estilização do contêiner principal para posicionamento */
+.texto-imagem {
+    position: relative; /* Essencial para que o 'texto' se posicione dentro dele */
+    width: 100%;
+    /* Altura será definida pela imagem, mas você pode definir uma altura mínima se quiser */
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4cae4c;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 30px;
+}
+
+/* Texto */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #1a3d2f; /* verde escuro */
+}
+
+.hero-content p {
+  margin: 20px 0;
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.hero-content ul {
+  margin: 20px 0;
+  color: #555555;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.hero-content ul li {
+  margin-bottom: 8px;
+}
+/* Mantenha o estilo do seu container */
+.hero-text {
+    padding: 20px;
+    border-radius: 10px;
+    /* Remover 'color' daqui é uma opção, pois vamos aplicá-lo nos filhos */
+}
+
+/* NOVO: Aplique a cor branca diretamente aos itens da lista */
+.hero-text ul,
+.hero-text li {
+    color: #FFFFFF;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  background: #1a3d2f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2f6d4f; /* tom mais claro ao passar o mouse */
+}
+
+/* Imagem */
+.hero-image {
+  max-width: 45%;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 /* === HEADER === */
 header {

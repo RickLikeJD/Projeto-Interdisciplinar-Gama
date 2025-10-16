@@ -24,6 +24,29 @@
       <a href="aventuras.php" class="btn btn-success btn-lg mt-3">Comece Agora</a>
     </div>
   </section>
+    <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
+ <section class="hero">
+  <div class="hero-content">
+    <h1>Conecte-se com a Natureza em Experiências Únicas</h1>
+    <p>
+      Descubra roteiros de ecoturismo, trilhas guiadas e aventuras sustentáveis 
+      que aproximam você da natureza de forma responsável e memorável.
+    </p>
+   <div class="hero-text" >
+      <ul>
+      <li>Passeios ecológicos pensados para todos os níveis de aventureiros.</li>
+      <li>Experiências autênticas em meio à natureza preservada.</li>
+      <li>Guias especializados para sua segurança e conhecimento.</li>
+      <li>Práticas sustentáveis que respeitam o meio ambiente.</li>
+      </ul>
+   </div>
+    <a href="#servicos" class="btn">Explore Nossas Aventuras</a>
+  </div>
+  <div class="hero-image">
+    <img src="../img/praçadobommenino.jpg" alt="Ecoturismo em meio à natureza">
+  </div>
+</section>
+
 
   <!-- Seção de Categorias -->
   <section class="categorias py-5 text-center">
@@ -32,7 +55,7 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
-            <img src="img/trilha.jpg" class="card-img-top" alt="Trilhas">
+            <img src="../img/jansen.jfif" class="card-img-top" alt="Trilhas">
             <div class="card-body">
               <h3 class="card-title">Trilhas</h3>
               <p class="card-text">Caminhe por rotas incríveis e conecte-se com a natureza.</p>
@@ -41,7 +64,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
-            <img src="img/acampamento.jpg" class="card-img-top" alt="Acampamentos">
+            <img src="../img/camping.jpg" class="card-img-top" alt="Acampamentos">
             <div class="card-body">
               <h3 class="card-title">Acampamentos</h3>
               <p class="card-text">Durma sob as estrelas em lugares paradisíacos.</p>
@@ -50,10 +73,10 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
-            <img src="img/rafting.jpg" class="card-img-top" alt="Rafting">
+            <img src="../img/poço.webp" class="card-img-top" alt="Banhos">
             <div class="card-body">
-              <h3 class="card-title">Rafting</h3>
-              <p class="card-text">Adrenalina garantida em corredeiras desafiadoras.</p>
+              <h3 class="card-title">Banhos</h3>
+              <p class="card-text">banhos em cachoeiras e lagoas paradisíacas.</p>
             </div>
           </div>
         </div>
@@ -61,19 +84,8 @@
     </div>
   </section>
 
-  <!-- Benefícios -->
-  <section class="beneficios bg-light py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">Por que escolher a Ecoway?</h2>
-      <ul class="list-unstyled fs-5">
-        <li>🌿 Turismo sustentável</li>
-        <li>👨‍👩‍👧‍👦 Experiências para toda a família</li>
-        <li>🧑‍🏫 Guias especializados</li>
-        <li>⭐ Avaliação 5 estrelas</li>
-      </ul>
-    </div>
-  </section>
 
+<!-- Tira essa porra do footer e coloca em um botao de 3 pontinhos like-->
   <!-- CTA -->
   <section class="cta text-center text-white py-5" style="background: #2ecc71;">
     <div class="container">
@@ -91,3 +103,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+ 
