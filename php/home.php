@@ -15,16 +15,11 @@
 
   <!-- Header -->
   <?php include 'header2.php'; ?>
+    <!-- carrosel -->
 
-  <!-- Hero Section -->
-  <section class="hero d-flex align-items-center text-center text-white" style="background: url('img/natureza.jpg') no-repeat center center/cover; min-height: 90vh;">
-    <div class="container">
-      <h1 class="display-3 fw-bold">Explore a Natureza com a Ecoway</h1>
-      <p class="lead">Descubra aventuras inesquecíveis em meio à natureza.</p>
-      <a href="aventuras.php" class="btn btn-success btn-lg mt-3">Comece Agora</a>
-    </div>
-  </section>
-    <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
+
+ 
+    <!-- bloco inicial  -->
  <section class="hero">
   <div class="hero-content">
     <h1>Conecte-se com a Natureza em Experiências Únicas</h1>
@@ -40,7 +35,7 @@
       <li>Práticas sustentáveis que respeitam o meio ambiente.</li>
       </ul>
    </div>
-    <a href="#servicos" class="btn">Explore Nossas Aventuras</a>
+    <a href="aventuras.php" class="btn btn-success btn-lg mt-3">Comece Agora</a>
   </div>
   <div class="hero-image">
     <img src="../img/praçadobommenino.jpg" alt="Ecoturismo em meio à natureza">
