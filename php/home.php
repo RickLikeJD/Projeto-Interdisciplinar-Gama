@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
   
   <!-- CSS customizado -->
-  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/estiloinicial.css">
 </head>
 <body>
 
