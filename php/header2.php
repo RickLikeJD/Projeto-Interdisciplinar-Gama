@@ -46,9 +46,9 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategorias">
               <li><a class="dropdown-item" href="gamainicial.php">Trilhas</a></li>
-              <li><a class="dropdown-item" href="#">Ficção Científica</a></li>
-              <li><a class="dropdown-item" href="#">Fantasia</a></li>
-              <li><a class="dropdown-item" href="#">Terror</a></li>
+              <li><a class="dropdown-item" href="#">banhos</a></li>
+              <li><a class="dropdown-item" href="#">acampamento</a></li>
+              <li><a class="dropdown-item" href="#">escaladas</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Ver Todas</a></li>
           </ul>
