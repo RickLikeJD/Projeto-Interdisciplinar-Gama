@@ -1,4 +1,4 @@
-<?php include 'header.php'; // Seu cabeçalho HTML 
+<?php include 'header2.php'; // Seu cabeçalho HTML 
 
 $nome_trilha_atual = "parque do bom menino"; 
 // Define o nome da trilha

@@ -1,7 +1,5 @@
 <?php
-include 'header.php';
-// 2. Define o nome da trilha para esta página específica
-// Este valor deve corresponder ao que está na sua coluna 'nome_trilha' no banco de dados
+include 'header2.php';
 $nome_trilha_atual = "parque do itapiracó"; // Exemplo
 ?>
 
