@@ -6,11 +6,13 @@
   <title>Perfil</title>
   <link rel="stylesheet" href="../css/perfil.css">
 </head>
+
+
 <body>
   <div class="container">
     <!-- SIDEBAR: perfil resumido -->
     <aside class="card sidebar">
-      <img src="https://via.placeholder.com/320x320.png?text=Avatar" alt="Avatar" class="avatar">
+      <img src="../img/fotoPerfil.jpg" alt="Avatar" class="avatar">
       <h1 class="user-name">Hiago</h1>
       <p class="muted user-email">hiago@email.com</p>
 
