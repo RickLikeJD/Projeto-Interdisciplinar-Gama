@@ -43,23 +43,30 @@
 </section>
 <!-- texto padrao -->
 
-<section class="into">
-  <div class="intro-content">
-    <h1>Por que Escolher a Ecoway?</h1>
-    <p>A Ecoway nasceu com o propósito de tornar o contato com a natureza mais acessível, seguro e transformador. Nosso compromisso é oferecer experiências que unam aventura, aprendizado e responsabilidade ambiental, proporcionando ao visitante a oportunidade de conhecer ambientes naturais de forma consciente e enriquecedora.</p>
-    <h2>Valorizamos cada detalhe das vivências ao ar livre: da escolha dos roteiros à capacitação de nossos guias, tudo é planejado para que você explore lugares únicos com tranquilidade e respeito ao meio ambiente. Aqui, cada atividade é construída para ampliar sua conexão com a natureza, estimulando a preservação e a compreensão da importância dos ecossistemas que nos cercam.</h2>
-    <p>Trabalhamos para que sua experiência seja completa, integrando:</p>
- <div class="intro-text">
-  <ul>
-    <li>Contato genuíno com áreas naturais preservadas.</li>
-    <li>Informações claras e orientações responsáveis para cada percurso.</li>
-    <li>Apoio profissional durante toda a jornada.</li>
-    <li>Compromisso ambiental em todas as etapas das atividades.</li>
-  </ul>
+<section class="intro">
+  
+ <div class="texto">
+     <h2>Por que Escolher a Ecoway?</h2>
+    <p>
+      A Ecoway nasceu com o propósito de tornar o contato com a natureza mais acessível, seguro e transformador. Nosso compromisso é oferecer experiências que unam aventura, aprendizado e responsabilidade ambiental, proporcionando ao visitante a oportunidade de conhecer ambientes naturais de forma consciente e enriquecedora.
+    </p>
+
+    <p>
+      Valorizamos cada detalhe das vivências ao ar livre: da escolha dos roteiros à capacitação de nossos guias, tudo é planejado para que você explore lugares únicos com tranquilidade e respeito ao meio ambiente. Aqui, cada atividade é construída para ampliar sua conexão com a natureza, estimulando a preservação e a compreensão da importância dos ecossistemas que nos cercam.
+    </p>
+
+    <ul>
+      <li>Contato genuíno com áreas naturais preservadas.</li>
+      <li>Informações claras e orientações responsáveis para cada percurso.</li>
+      <li>Apoio profissional durante toda a jornada.</li>
+      <li>Compromisso ambiental em todas as etapas das atividades.</li>
+    </ul>
   </div>
- <div class="intro-image">
-    <img src="../img/carolina.webp" alt="Contato com a natureza">
- </div>   
+ 
+  </div>
+ <div class="imagem">
+  <img src="../img/carolina.webp" alt="Carolina-Ma"> 
+ </div>
 </section>
   <!-- Seção de Categorias -->
   <section class="categorias py-5 text-center">

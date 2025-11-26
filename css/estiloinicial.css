@@ -193,3 +193,38 @@ footer {
 .menu-popup a:hover {
   opacity: 0.7;
 }
+.intro {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.intro .texto {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.intro .imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.intro .imagem img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 10px;
+  object-fit: cover;
+}

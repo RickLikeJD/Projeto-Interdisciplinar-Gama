@@ -16,7 +16,7 @@
 }
 
 /* Estilo para o primeiro bloco (imagem à esquerda, texto à direita) */
-.texto-imagem {
+.intro-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,19 +24,19 @@
     margin-bottom: 50px;
 }
 
-.texto-imagem img {
+.intro-text img {
     width: 45%;
     height: auto;
     border-radius: 10px;
 }
 
-.texto-imagem .texto {
+.intro-text .texto {
     width: 55%;
     text-align: right; /* texto alinhado à direita */
 }
 
 /* Estilo para o segundo bloco (imagem à direita, texto à esquerda) */
-.texto-imagem-reverso {
+.intro-text-reverso {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,13 +45,13 @@
     margin-bottom: 50px;
 }
 
-.texto-imagem-reverso img {
+.intro-text img {
     width: 45%;
     height: auto;
     border-radius: 10px;
 }
 
-.texto-imagem-reverso .texto {
+.intro-text-reverso .texto {
     width: 55%;
     text-align: left; /* texto alinhado à esquerda */
 }
