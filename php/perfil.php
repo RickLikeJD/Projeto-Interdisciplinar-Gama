@@ -55,23 +55,36 @@
       </section>
 
       <section class="card">
-        <h2 class="section-title">Alterar senha</h2>
+  <h2 class="section-title">Alterar senha</h2>
 
-        <form id="form-password" class="form-grid" data-action="/api/profile/change-password" method="post">
-          <label for="current_password">Senha atual</label>
-          <input type="password" id="current_password" name="current_password" placeholder="Senha atual" required>
+  <!-- BOTÃO QUE MOSTRA / ESCONDE O FORMULÁRIO -->
+  <button id="btn-show-password-form" class="btn" type="button">
+    Trocar senha
+  </button>
 
-          <label for="new_password">Nova senha</label>
-          <input type="password" id="new_password" name="new_password" placeholder="Nova senha" required>
+  <!-- FORMULÁRIO INICIALMENTE ESCONDIDO -->
+  <div id="password-form-container" style="display: none; margin-top:20px;">
 
-          <label for="confirm_password">Confirmar nova senha</label>
-          <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar nova senha" required>
+    <form id="form-password" class="form-grid" 
+          data-action="/api/profile/change-password" method="post">
+          
+      <label for="current_password">Senha atual</label>
+      <input type="password" id="current_password" name="current_password" placeholder="Senha atual" required>
 
-          <div class="pw-row">
-            <button type="submit" class="btn">Trocar senha</button>
-          </div>
-        </form>
-      </section>
+      <label for="new_password">Nova senha</label>
+      <input type="password" id="new_password" name="new_password" placeholder="Nova senha" required>
+
+      <label for="confirm_password">Confirmar nova senha</label>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar nova senha" required>
+
+      <div class="pw-row">
+        <button type="submit" class="btn">Confirmar troca</button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
 
       <section class="card">
         <h2 class="section-title">Minhas Trilhas (últimas 12)</h2>
@@ -127,5 +140,23 @@
         });
     });
   </script>
+
+<script>
+  document.getElementById("btn-show-password-form")
+    .addEventListener("click", function () {
+      const box = document.getElementById("password-form-container");
+
+      // Alterna visibilidade
+      if (box.style.display === "none") {
+        box.style.display = "block";
+        this.textContent = "Ocultar";
+      } else {
+        box.style.display = "none";
+        this.textContent = "Trocar senha";
+      }
+    });
+</script>
+
+
 </body>
 </html>
