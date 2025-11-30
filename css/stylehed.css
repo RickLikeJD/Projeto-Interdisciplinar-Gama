@@ -34,6 +34,7 @@
   border-bottom-color: var(--verde-principal);
 }
 
+
 /* Dropdown custom */
 .nav-item.dropdown-custom {
   position: relative;
@@ -81,6 +82,10 @@
   border-radius: 6px;
   padding: 6px 16px;    
 }
+.btn-login:hover {
+  background-color: #2ecc71 !important;
+}
+
 
 /* Carrinho (slide lateral) */
 
