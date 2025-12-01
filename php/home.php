@@ -34,7 +34,6 @@ if (session_status() === PHP_SESSION_NONE) {
             <li><span class="material-icons">check_circle</span> Segurança e exclusividade.</li>
           </ul>
 
-          <a href="aventuras.php" class="btn-eco">Explorar Roteiros</a>
         </div>
         
         <div class="col-lg-6">
