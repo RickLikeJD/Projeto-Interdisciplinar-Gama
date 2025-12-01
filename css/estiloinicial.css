@@ -1,67 +1,364 @@
 /* ==========================================================================
-   CTA FINAL (CORRIGIDO)
+   VARIÁVEIS E GLOBAL
    ========================================================================== */
-   .cta-section {
-    /* Truque: Gradiente verde escuro transparente + Imagem de fundo */
-    /* Isso garante que o texto branco fique legível em cima da foto */
-    background: linear-gradient(rgba(22, 58, 43, 0.85), rgba(22, 58, 43, 0.7)), url('../img/camping.jpg'); 
-    
-    background-size: cover;      /* A imagem cobre tudo */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* EFEITO PARALLAX (A imagem fica parada enquanto vc rola) */
-    
-    color: #fff;
-    padding: 100px 20px; /* Mais altura para respirar */
-    border-radius: var(--radius);
-    margin: 60px 20px 100px 20px; /* Margem embaixo pro botão flutuante não ficar em cima */
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* Sombra para dar destaque */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+   :root {
+     --primary: #163a2b;       /* Verde Escuro Ecoway */
+     --primary-hover: #0e291e; 
+     --bg-body: #faf9f6;       /* Creme Suave */
+     --text-main: #2d3330;
+     --radius: 16px;
+   }
+   
+   body {
+     font-family: 'Poppins', sans-serif;
+     background-color: var(--bg-body);
+     color: var(--text-main);
+     overflow-x: hidden;
+   }
+   
+   .main-container {
+       margin-top: 20px;
+   }
+   
+   /* ==========================================================================
+      HERO SECTION (CAPA)
+      ========================================================================== */
+   .hero {
+     padding: 60px 0;
+     display: flex;
+     align-items: center;
+     min-height: 80vh;
+   }
+   
+   .badge-eco {
+     background-color: #e8f5e9;
+     color: var(--primary);
+     padding: 6px 14px;
+     border-radius: 30px;
+     font-weight: 600;
+     text-transform: uppercase;
+     font-size: 0.8rem;
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+     display: inline-block;
+   }
+   
+   .hero h1 {
+     font-size: 3.5rem;
+     font-weight: 700;
+     line-height: 1.2;
+     color: var(--primary);
+     margin-bottom: 20px;
+   }
+   
+   .hero p {
+     font-size: 1.1rem;
+     color: #666;
+     margin-bottom: 30px;
+     max-width: 500px;
+   }
+   
+   .hero-list {
+     list-style: none;
+     padding: 0;
+     margin-bottom: 30px;
+   }
+   
+   .hero-list li {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 12px;
+     font-size: 1rem;
+     font-weight: 500;
+   }
+   
+   .hero-list .material-icons {
+     color: var(--primary);
+     font-size: 22px;
+   }
+   
+   .btn-eco {
+     background-color: var(--primary);
+     color: #fff;
+     padding: 15px 35px;
+     border-radius: 50px;
+     font-weight: 600;
+     text-decoration: none;
+     transition: all 0.3s;
+     display: inline-block;
+     border: none;
+   }
+   
+   .btn-eco:hover {
+     background-color: var(--primary-hover);
+     transform: translateY(-3px);
+     box-shadow: 0 10px 20px rgba(22, 58, 43, 0.2);
+     color: #fff;
+   }
+   
+   .img-hero, .img-intro {
+     border-radius: var(--radius);
+     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+     width: 100%;
+     object-fit: cover;
+   }
+   
+
+/* ==========================================================================
+   CARROSSEL SWIPER
+   ========================================================================== */
+   .hero-carousel-wrapper {
+    width: 100%;
+    min-height: 350px; /* Garante altura mínima */
+    aspect-ratio: 16 / 9; /* Mantém formato de cinema */
+    border-radius: 24px; /* Bordas bem arredondadas */
+    overflow: hidden; /* Corta a imagem que vazar */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     position: relative;
-    overflow: hidden;
-  }
-  
-  .cta-section h2 { 
-    color: #fff; /* Garante que o título seja branco */
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .cta-section p { 
-    color: rgba(255,255,255,0.9); 
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 30px auto; /* Centraliza o texto */
-  }
-  
-  /* BOTÃO BRANCO (CORRIGIDO PARA APARECER) */
-  .btn-white {
-    background-color: #ffffff !important; /* !important força o branco */
-    color: var(--primary) !important;     /* Texto verde */
-    border: none;
-    padding: 15px 40px;
-    border-radius: 50px; /* Botão redondinho (Pílula) fica mais moderno */
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-  
-  .btn-white:hover {
-    background-color: #f0f0f0 !important;
-    transform: translateY(-3px); /* Sobe levemente */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    color: #0e291e !important;
-  }
-  
-  /* Responsivo para celular */
-  @media (max-width: 768px) {
-    .cta-section {
-      margin: 40px 0; /* Remove margem lateral no mobile pra ocupar tela toda */
-      border-radius: 0;
-      padding: 60px 20px;
-    }
-    .cta-section h2 { font-size: 1.8rem; }
-  }
+    z-index: 1; /* Garante que fique acima de elementos estranhos */
+    background-color: #eee;
+}
+
+.hero-swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* O resto do CSS pode manter igual */
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre todo o espaço */
+    display: block;
+}
+
+/* 4. Personalizando as setinhas para ficarem VERDES */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important; /* Seta branca */
+  background-color: rgba(22, 58, 43, 0.6); /* Fundo verde transparente */
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%; /* Redondo */
+  transition: background 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(22, 58, 43, 0.9); /* Verde mais forte no hover */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/* 5. Bolinhas da paginação */
+.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+}
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.7;
+}
+   
+   /* ==========================================================================
+      SEÇÕES GERAIS
+      ========================================================================== */
+   .intro-section { padding: 80px 0; }
+   
+   .section-title {
+     font-size: 2.5rem;
+     font-weight: 700;
+     color: var(--primary);
+     margin-bottom: 20px;
+   }
+   
+   /* Título Decorado (Nossas Experiências) */
+   .section-header-wrapper {
+       text-align: center;
+       margin-bottom: 60px;
+       position: relative;
+   }
+   
+   .section-title-decor {
+       font-size: 2.8rem;
+       font-weight: 700;
+       color: var(--primary);
+       display: inline-block;
+       position: relative;
+       margin-bottom: 15px;
+   }
+   
+   .section-title-decor::after {
+       content: '';
+       display: block;
+       width: 60%;
+       height: 4px;
+       background-color: var(--primary);
+       margin: 15px auto 0;
+       border-radius: 2px;
+       opacity: 0.7;
+   }
+   
+   /* ==========================================================================
+      CARDS PREMIUM
+      ========================================================================== */
+   .card-eco {
+     border: none;
+     border-radius: var(--radius);
+     background: #fff;
+     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     height: 100%;
+     box-shadow: 0 10px 30px -5px rgba(0,0,0,0.1);
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+   }
+   
+   .card-eco:hover {
+     transform: translateY(-15px);
+     box-shadow: 0 25px 50px -12px rgba(22, 58, 43, 0.3);
+   }
+   
+   .card-img-wrapper {
+     height: 250px;
+     overflow: hidden;
+     flex-shrink: 0;
+     position: relative;
+   }
+   
+   .card-img-wrapper::after {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 40%;
+       background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+       opacity: 0.6;
+   }
+   
+   .card-eco img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: transform 0.6s ease-out;
+   }
+   
+   .card-eco:hover img { transform: scale(1.12); }
+   
+   .card-body {
+       padding: 30px;
+       flex-grow: 1;
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       z-index: 2;
+   }
+   
+   .card-title {
+       font-size: 1.5rem;
+       font-weight: 800;
+       color: var(--primary);
+       margin-bottom: 15px;
+   }
+   
+   .card-text {
+       flex-grow: 1;
+       font-size: 1rem;
+       color: #555;
+       margin-bottom: 25px;
+       line-height: 1.6;
+   }
+   
+   .link-arrow {
+       color: var(--primary);
+       font-weight: 700;
+       text-decoration: none;
+       margin-top: auto;
+       display: inline-flex;
+       align-items: center;
+       text-transform: uppercase;
+       font-size: 0.85rem;
+       letter-spacing: 1px;
+       transition: all 0.3s;
+   }
+   
+   .link-arrow::after {
+       content: '→';
+       margin-left: 8px;
+       transition: transform 0.3s;
+       font-size: 1.1rem;
+   }
+   
+   .link-arrow:hover { color: var(--primary-hover); }
+   .link-arrow:hover::after { transform: translateX(8px); }
+   
+   /* ==========================================================================
+      BANNER CTA (Parallax)
+      ========================================================================== */
+   .cta-banner {
+     /* Caminho da imagem relativo ao arquivo CSS (../img significa: saia do css, entre em img) */
+     background: linear-gradient(rgba(22, 58, 43, 0.85), rgba(22, 58, 43, 0.7)), url('../img/camping.jpg');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     padding: 100px 20px;
+     text-align: center;
+     color: #fff;
+     border-radius: var(--radius);
+     margin: 50px 0 100px 0;
+   }
+   
+   .btn-white {
+     background: #fff;
+     color: var(--primary);
+     padding: 15px 40px;
+     border-radius: 50px;
+     font-weight: 700;
+     text-decoration: none;
+     display: inline-block;
+     margin-top: 20px;
+     transition: all 0.3s;
+   }
+   
+   .btn-white:hover {
+     background: #f1f1f1;
+     transform: scale(1.05);
+     color: var(--primary);
+   }
+   
+   /* ==========================================================================
+      FAB MENU
+      ========================================================================== */
+   .fab-container { position: fixed; bottom: 30px; right: 30px; z-index: 1000; display: flex; flex-direction: column; align-items: flex-end; }
+   .fab-btn { width: 60px; height: 60px; background-color: var(--primary); color: #fff; border-radius: 50%; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s; }
+   .fab-btn:hover { transform: scale(1.1); }
+   .fab-menu { display: none; background: #fff; padding: 20px; border-radius: 12px; width: 220px; margin-bottom: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.15); }
+   .fab-menu a { padding: 8px 0; color: var(--text-main); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+   .fab-menu a:hover { color: var(--primary); }
+   
+   /* ==========================================================================
+      RESPONSIVO
+      ========================================================================== */
+   @media (max-width: 991px) {
+     .hero { text-align: center; display: block; padding-top: 40px;}
+     .hero h1 { font-size: 2.5rem; }
+     .hero p { margin: 0 auto 30px auto; }
+     .hero-list { display: inline-block; text-align: left; margin-bottom: 40px;}
+     .img-hero { margin-top: 30px; height: auto; }
+     .row.reverse-mobile { flex-direction: column-reverse; }
+   }
