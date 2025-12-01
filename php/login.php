@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $stmt->close();
                         $conn->close(); 
                         
-                        header("Location: ../php/gamainicial.php"); 
+                        header("Location: ../php/home.php"); 
                         exit(); 
                     } else {
                         $login_error_message = "Usuário ou senha inválido!";

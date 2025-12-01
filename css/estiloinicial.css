@@ -1,230 +1,67 @@
-/* ---------------------- */
-/*  Reset e ajustes gerais */
-/* ---------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #f5fff6;
-  color: #333;
-}
-
-/* ---------------------- */
-/*  HERO SECTION           */
-/* ---------------------- */
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 5%;
-  background: #e8f7ec;
-  gap: 40px;
-}
-
-.hero-content {
-  max-width: 50%;
-}
-
-.hero-content h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #2d8a4a;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.hero-text ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.hero-text li {
-  margin-bottom: 8px;
-  padding-left: 22px;
-  position: relative;
-}
-.hero-text li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #2d8a4a; /* pode mudar a cor */
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-
-.hero-image img {
-  width: 480px;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Responsivo hero */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column-reverse;
+/* ==========================================================================
+   CTA FINAL (CORRIGIDO)
+   ========================================================================== */
+   .cta-section {
+    /* Truque: Gradiente verde escuro transparente + Imagem de fundo */
+    /* Isso garante que o texto branco fique legível em cima da foto */
+    background: linear-gradient(rgba(22, 58, 43, 0.85), rgba(22, 58, 43, 0.7)), url('../img/camping.jpg'); 
+    
+    background-size: cover;      /* A imagem cobre tudo */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* EFEITO PARALLAX (A imagem fica parada enquanto vc rola) */
+    
+    color: #fff;
+    padding: 100px 20px; /* Mais altura para respirar */
+    border-radius: var(--radius);
+    margin: 60px 20px 100px 20px; /* Margem embaixo pro botão flutuante não ficar em cima */
     text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* Sombra para dar destaque */
+    position: relative;
+    overflow: hidden;
   }
-
-  .hero-content {
-    max-width: 100%;
+  
+  .cta-section h2 { 
+    color: #fff; /* Garante que o título seja branco */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
   }
-
-  .hero-image img {
-    width: 100%;
+  
+  .cta-section p { 
+    color: rgba(255,255,255,0.9); 
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto; /* Centraliza o texto */
   }
-}
-
-/* ---------------------- */
-/*  CARDS DE CATEGORIAS   */
-/* ---------------------- */
-
-.categorias h2 {
-  font-weight: 700;
-  color: #2d8a4a;
-}
-
-.card {
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.3s;
-  border: none;
-}
-
-.card img {
-  height: 230px;
-  object-fit: cover;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.card-title {
-  color: #2d8a4a;
-  font-weight: 600;
-}
-
-/* ---------------------- */
-/*  CTA (Reserve agora)   */
-/* ---------------------- */
-
-.cta {
-  background: linear-gradient(90deg, #27ae60, #2ecc71);
-}
-
-.cta h2 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-/* ---------------------- */
-/*  FOOTER                */
-/* ---------------------- */
-
-footer {
-  font-size: 0.9rem;
-  background: #1a1a1a;
-}
-
-
-/* ---------------------- */
-/* BOTÃO FLUTUANTE MENU   */
-/* ---------------------- */
-/* “3 pontinhos” no lugar do footer fixo */
-
-.menu-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #2ecc71;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  transition: 0.3s;
-  z-index: 9999;
-}
-
-.menu-btn:hover {
-  background: #27ae60;
-}
-
-/* MENU FLUTUANTE */
-.menu-popup {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  width: 180px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  display: none;
-  flex-direction: column;
-  gap: 12px;
-  z-index: 9999;
-}
-
-.menu-popup a {
-  text-decoration: none;
-  color: #2d8a4a;
-  font-weight: 600;
-}
-
-.menu-popup a:hover {
-  opacity: 0.7;
-}
-.intro {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  padding: 40px 20px;
-}
-
-.intro .texto {
-  flex: 1;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.intro h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.intro ul {
-  margin-top: 20px;
-  padding-left: 20px;
-}
-
-.intro .imagem {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.intro .imagem img {
-  width: 100%;
-  max-width: 550px;
-  border-radius: 10px;
-  object-fit: cover;
-}
+  
+  /* BOTÃO BRANCO (CORRIGIDO PARA APARECER) */
+  .btn-white {
+    background-color: #ffffff !important; /* !important força o branco */
+    color: var(--primary) !important;     /* Texto verde */
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px; /* Botão redondinho (Pílula) fica mais moderno */
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-white:hover {
+    background-color: #f0f0f0 !important;
+    transform: translateY(-3px); /* Sobe levemente */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    color: #0e291e !important;
+  }
+  
+  /* Responsivo para celular */
+  @media (max-width: 768px) {
+    .cta-section {
+      margin: 40px 0; /* Remove margem lateral no mobile pra ocupar tela toda */
+      border-radius: 0;
+      padding: 60px 20px;
+    }
+    .cta-section h2 { font-size: 1.8rem; }
+  }
