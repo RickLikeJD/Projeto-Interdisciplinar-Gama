@@ -160,10 +160,10 @@ if (session_status() === PHP_SESSION_NONE) {
       spaceBetween: 0,
       loop: true,
       effect: "slide",
-      speed: 600,
-      autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+      speed: 600,
+      autoplay: {
       },
       navigation: {
         nextEl: ".swiper-button-next",
