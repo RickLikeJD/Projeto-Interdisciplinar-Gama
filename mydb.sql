@@ -66,7 +66,8 @@ CREATE TABLE IF NOT EXISTS `tbProdutos` (
     REFERENCES `tbVendedor` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE
-) ENGINE=InnoDB;
+) ENGINE=InnoDB;]
+
 -- Tabela vendedor
 CREATE TABLE IF NOT EXISTS `tbVendedor` (
   `id` INT NOT NULL AUTO_INCREMENT,

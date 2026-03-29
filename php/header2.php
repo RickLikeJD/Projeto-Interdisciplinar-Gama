@@ -30,7 +30,7 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
 <?php if (!$isAuthPage): ?>
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="gamainicial.php">Ecoway</a>
+    <a class="navbar-brand" href=".php">Ecoway</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -102,7 +102,6 @@ $isAuthPage = in_array($currentPage, ['login.php', 'cadastro.php']);
 <?php endif; ?>
 
 <!-- Scripts -->
-<script src="../js/scriptheader.js"></script>
 <script src="../js/scriptheader2.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
